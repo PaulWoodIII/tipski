@@ -1,26 +1,88 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tipsky" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Bill" textAlignment="right" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="MOo-K8-RnY">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
+                                <connections>
+                                    <action selector="textFieldDidChange:" destination="BYZ-38-t0r" eventType="editingChanged" id="1IY-TY-o2O"/>
+                                    <action selector="textfieldDidChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="Jyo-S4-y7Q"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="😶" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Uf-Yg-ztL">
+                                <fontDescription key="fontDescription" type="system" pointSize="85"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="YCB-9v-NEA">
+                                <connections>
+                                    <action selector="satisfactionSliderValueChangedWithSender:" destination="BYZ-38-t0r" eventType="valueChanged" id="bmS-Zj-kkd"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d9d-1g-F4g">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rrs-cC-92g">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Uf-Yg-ztL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="0WL-TC-neq"/>
+                            <constraint firstItem="d9d-1g-F4g" firstAttribute="top" secondItem="YCB-9v-NEA" secondAttribute="bottom" constant="8" symbolic="YES" id="5le-Kl-Dyx"/>
+                            <constraint firstItem="6Uf-Yg-ztL" firstAttribute="top" secondItem="MOo-K8-RnY" secondAttribute="bottom" constant="20" id="ARB-Js-ffA"/>
+                            <constraint firstItem="MOo-K8-RnY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="56" id="FRb-W3-Fdm"/>
+                            <constraint firstItem="MOo-K8-RnY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="Hd4-BL-WTY"/>
+                            <constraint firstItem="MOo-K8-RnY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Hng-cA-J9Z"/>
+                            <constraint firstItem="d9d-1g-F4g" firstAttribute="leading" secondItem="Rrs-cC-92g" secondAttribute="leading" id="IOg-p3-CKH"/>
+                            <constraint firstItem="6Uf-Yg-ztL" firstAttribute="leading" secondItem="YCB-9v-NEA" secondAttribute="leading" id="RnA-xz-GLD"/>
+                            <constraint firstItem="MOo-K8-RnY" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1/2" priority="750" id="Scp-iy-DbB"/>
+                            <constraint firstItem="6Uf-Yg-ztL" firstAttribute="trailing" secondItem="YCB-9v-NEA" secondAttribute="trailing" id="Sqb-kX-gjm"/>
+                            <constraint firstItem="YCB-9v-NEA" firstAttribute="top" secondItem="6Uf-Yg-ztL" secondAttribute="bottom" constant="8" symbolic="YES" id="T30-Yp-zP7"/>
+                            <constraint firstItem="MOo-K8-RnY" firstAttribute="trailing" secondItem="d9d-1g-F4g" secondAttribute="trailing" id="WZK-nB-KEr"/>
+                            <constraint firstItem="6Uf-Yg-ztL" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="XNo-SK-tfi"/>
+                            <constraint firstItem="d9d-1g-F4g" firstAttribute="width" secondItem="MOo-K8-RnY" secondAttribute="width" id="epJ-UE-kUh"/>
+                            <constraint firstItem="Rrs-cC-92g" firstAttribute="top" secondItem="d9d-1g-F4g" secondAttribute="bottom" constant="8" symbolic="YES" id="exm-rE-5Rq"/>
+                            <constraint firstItem="YCB-9v-NEA" firstAttribute="centerX" secondItem="d9d-1g-F4g" secondAttribute="centerX" id="hxD-h5-oIV"/>
+                            <constraint firstItem="Rrs-cC-92g" firstAttribute="width" secondItem="MOo-K8-RnY" secondAttribute="width" id="j8a-Ur-r50"/>
+                            <constraint firstItem="d9d-1g-F4g" firstAttribute="trailing" secondItem="Rrs-cC-92g" secondAttribute="trailing" id="u9g-hZ-m3c"/>
+                            <constraint firstItem="MOo-K8-RnY" firstAttribute="leading" secondItem="d9d-1g-F4g" secondAttribute="leading" id="vyj-cT-5zI"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="amountTextField" destination="MOo-K8-RnY" id="LyQ-7G-qoH"/>
+                        <outlet property="satisfactionLabel" destination="6Uf-Yg-ztL" id="vIj-7D-bo1"/>
+                        <outlet property="satisfactionSlider" destination="YCB-9v-NEA" id="Euh-ee-Bpr"/>
+                        <outlet property="tipLabel" destination="d9d-1g-F4g" id="o8X-SZ-8l3"/>
+                        <outlet property="totalLabel" destination="Rrs-cC-92g" id="1vq-VX-xMJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="36.431784107946029"/>
         </scene>
     </scenes>
 </document>
