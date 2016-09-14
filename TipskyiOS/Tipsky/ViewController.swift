@@ -22,11 +22,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     var customerSatLevel = [
         ["emoji":"😷","tip":0.0],
-//        ["emoji":"😭","tip":0.01],
-//        ["emoji":"😕","tip":0.08],
-//        ["emoji":"😶","tip":0.12],
-//        ["emoji":"🙂","tip":0.15],
-//        ["emoji":"😀","tip":0.18],
+        ["emoji":"😭","tip":0.01],
+        ["emoji":"😕","tip":0.08],
+        ["emoji":"😶","tip":0.12],
+        ["emoji":"🙂","tip":0.15],
+        ["emoji":"😀","tip":0.18],
         ["emoji":"😍","tip":0.5]
     ]
     
@@ -54,7 +54,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         var minBounds = 0.0
         var foundSat = customerSatLevel[0]
         
-        for i in 0...customerSatLevel.count {
+        for i in 0..<customerSatLevel.count {
             if(minBounds > sat){
                 break
             }
@@ -99,6 +99,14 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBAction func settingsPressed() {
         self.performSegue(withIdentifier: "showSettings", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let nav = segue.destination as? UINavigationController,
+            let settings = nav.topViewController as? SettingsViewController
+            {
+            settings.customerSatLevel = customerSatLevel
+        }
     }
 }
 
