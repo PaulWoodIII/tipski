@@ -20,6 +20,15 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var totalLabel: UILabel!
     
+    var customerSatLevel = [
+        ["emoji":"😷","tip":0.0],
+//        ["emoji":"😭","tip":0.01],
+//        ["emoji":"😕","tip":0.08],
+//        ["emoji":"😶","tip":0.12],
+//        ["emoji":"🙂","tip":0.15],
+//        ["emoji":"😀","tip":0.18],
+        ["emoji":"😍","tip":0.5]
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,38 +48,23 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     func updateViews(){
         
-        let sat = satisfactionSlider.value
-        var satisfactionText = "😶"
-        var tip = 0.0
+        let sat = Double(satisfactionSlider.value)
+
+        let increment = 1.0 / Double(customerSatLevel.count)
+        var minBounds = 0.0
+        var foundSat = customerSatLevel[0]
         
-        if sat < 0.15 {
-            satisfactionText = "😷"
-            tip = 0.0
+        for i in 0...customerSatLevel.count {
+            if(minBounds > sat){
+                break
+            }
+            minBounds = minBounds + increment;
+            foundSat = customerSatLevel[i]
         }
-        else if sat < 0.30 {
-            satisfactionText = "😭"
-            tip = 0.01
-        }
-        else if sat < 0.45 {
-            satisfactionText = "😕"
-            tip = 0.08
-        }
-        else if sat < 0.60 {
-            satisfactionText = "😶"
-            tip = 0.12
-        }
-        else if sat < 0.75 {
-            satisfactionText = "🙂"
-            tip = 0.15
-        }
-        else if sat < 0.90 {
-            satisfactionText = "😀"
-            tip = 0.18
-        }
-        else {
-            satisfactionText = "😍"
-            tip = 0.5
-        }
+        
+        let satisfactionText = foundSat["emoji"] as! String!
+        let tip : Double! = foundSat["tip"] as! Double!
+        
         
         satisfactionLabel.text = satisfactionText
         if let amount = Double(amountTextField.text!){
@@ -83,9 +77,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     let numberFormatter : NumberFormatter = {
-        let nForm = NumberFormatter()
-        nForm.numberStyle = .currency
-        return nForm
+        let f = NumberFormatter()
+        f.numberStyle = .currency
+        return f
     }()
     
     func prettyPrintMoney(_ value : Double) -> String {
@@ -103,5 +97,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         updateViews()
     }
 
+    @IBAction func settingsPressed() {
+        self.performSegue(withIdentifier: "showSettings", sender: nil)
+    }
 }
 
