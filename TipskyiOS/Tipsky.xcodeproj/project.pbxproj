@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		DA4AFC2E1D89D369001F958A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4AFC2D1D89D369001F958A /* SettingsViewController.swift */; };
-		DA4AFC301D89DDF9001F958A /* background.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4AFC2F1D89DDF9001F958A /* background.swift */; };
 		DA8B18491D87102000C529D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8B18481D87102000C529D7 /* AppDelegate.swift */; };
 		DA8B184B1D87102000C529D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8B184A1D87102000C529D7 /* ViewController.swift */; };
 		DA8B184E1D87102000C529D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA8B184C1D87102000C529D7 /* Main.storyboard */; };
@@ -38,7 +37,6 @@
 
 /* Begin PBXFileReference section */
 		DA4AFC2D1D89D369001F958A /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		DA4AFC2F1D89DDF9001F958A /* background.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = background.swift; sourceTree = "<group>"; };
 		DA8B18451D87102000C529D7 /* Tipsky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tipsky.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA8B18481D87102000C529D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA8B184A1D87102000C529D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -107,7 +105,6 @@
 				DA8B184A1D87102000C529D7 /* ViewController.swift */,
 				DA4AFC2D1D89D369001F958A /* SettingsViewController.swift */,
 				DA8B184C1D87102000C529D7 /* Main.storyboard */,
-				DA4AFC2F1D89DDF9001F958A /* background.swift */,
 				DA8B18521D87102000C529D7 /* Assets.xcassets */,
 				DA8B18541D87102000C529D7 /* LaunchScreen.storyboard */,
 				DA8B18571D87102000C529D7 /* Info.plist */,
@@ -278,7 +275,6 @@
 				DA8B184B1D87102000C529D7 /* ViewController.swift in Sources */,
 				DA8B18491D87102000C529D7 /* AppDelegate.swift in Sources */,
 				DA4AFC2E1D89D369001F958A /* SettingsViewController.swift in Sources */,
-				DA4AFC301D89DDF9001F958A /* background.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
