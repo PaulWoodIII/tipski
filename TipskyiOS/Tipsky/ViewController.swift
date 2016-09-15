@@ -20,6 +20,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var totalLabel: UILabel!
     
+    @IBOutlet weak var stackView: UIStackView!
+
     var customerSatLevel = [
         ["emoji":"😷","tip":0.0],
         ["emoji":"😭","tip":0.01],
@@ -48,6 +50,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     func updateViews(){
         
+        displayTipLabels()
         let sat = Double(satisfactionSlider.value)
 
         let increment = 1.0 / Double(customerSatLevel.count)
@@ -68,8 +71,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         satisfactionLabel.text = satisfactionText
         if let amount = Double(amountTextField.text!){
-            tipLabel.text = "Tip: \(prettyPrintMoney(amount * tip))"
-            totalLabel.text = "Total: \(prettyPrintMoney((amount * tip) + amount ))"
+            tipLabel.text = "\(prettyPrintMoney(amount * tip))"
+            totalLabel.text = "\(prettyPrintMoney((amount * tip) + amount ))"
         }
         else {
             displayError()
@@ -86,11 +89,21 @@ class ViewController: UIViewController, UITextFieldDelegate {
         let num = NSNumber(value: value)
         return numberFormatter.string(from: num)!
     }
+    func displayTipLabels (){
+        stackView.arrangedSubviews[3].isHidden = false;
+        stackView.arrangedSubviews[4].isHidden = false;
+    }
+    
+    func hideTipLabels(){
+        stackView.arrangedSubviews[3].isHidden = true;
+        stackView.arrangedSubviews[4].isHidden = true;
+    }
     
     func displayError(){
         satisfactionLabel.text = "🤔"
         tipLabel.text = ""
         totalLabel.text = ""
+        hideTipLabels()
     }
     
     @IBAction func textFieldDidChange(_ sender: UITextField) {

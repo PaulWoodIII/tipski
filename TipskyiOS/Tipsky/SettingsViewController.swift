@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SettingsViewController: UITableViewController, UIPopoverControllerDelegate {
+class SettingsViewController: UITableViewController, UIPopoverControllerDelegate, AddEmojiDelegate {
 
     var customerSatLevel : [[String:Any?]]!
     
@@ -77,6 +77,24 @@ class SettingsViewController: UITableViewController, UIPopoverControllerDelegate
         
         swap(&customerSatLevel[sourceIndexPath.row], &customerSatLevel[destinationIndexPath.row])
         tableView.moveRow(at: sourceIndexPath, to: destinationIndexPath)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let addVC = segue.destination as? AddEmojiViewController {
+            addVC.delegate = self
+        }
+    }
+    
+    func didAddEmojiWith(dictionary: [String : Any?]) {
+        print(dictionary)
+        //Add To Items
+        customerSatLevel.insert(dictionary, at: 0)
+        //Create Index
+        let idx = IndexPath(row: 0, section: 0)
+        //Add Index to Table View
+        tableView.insertRows(at: [idx as IndexPath], with: .middle)
+        
+        navigationController?.popViewController(animated: true)
     }
     
 }
