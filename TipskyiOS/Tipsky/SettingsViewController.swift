@@ -14,7 +14,6 @@ class SettingsViewController: UITableViewController, UIPopoverControllerDelegate
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        print(customerSatLevel)
         tableView.setEditing(true, animated: false)
     }
     
@@ -86,7 +85,6 @@ class SettingsViewController: UITableViewController, UIPopoverControllerDelegate
     }
     
     func didAddEmojiWith(dictionary: [String : Any?]) {
-        print(dictionary)
         //Add To Items
         customerSatLevel.insert(dictionary, at: 0)
         //Create Index
