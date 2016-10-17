@@ -92,7 +92,7 @@ class SettingsViewController: UITableViewController, UIPopoverControllerDelegate
         //Add Index to Table View
         tableView.insertRows(at: [idx as IndexPath], with: .middle)
         
-        navigationController?.popViewController(animated: true)
+        navigationController!.popViewController(animated: true)
     }
     
 }
