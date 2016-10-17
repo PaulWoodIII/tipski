@@ -24,6 +24,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var containerView: UIView!
     
+    @IBOutlet var doneToolbar: UIToolbar!
+    
     var customerSatLevel = [
         ["emoji":"😷","tip":0.0],
         ["emoji":"😭","tip":0.01],
@@ -38,7 +40,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         Appearance.createWellFromView(view: containerView)
         Appearance.createInput(textField: amountTextField)
-        
+        amountTextField.inputAccessoryView = doneToolbar
         updateViews()
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -47,6 +49,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    @IBAction func keyboardDonePressed(_ sender: AnyObject) {
+        amountTextField.resignFirstResponder()
+    }
+    
     // "😲😭😕😶🙂😀😍"
     @IBAction func satisfactionSliderValueChanged(sender: AnyObject) {
         
