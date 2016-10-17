@@ -22,6 +22,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var stackView: UIStackView!
 
+    @IBOutlet weak var containerView: UIView!
+    
     var customerSatLevel = [
         ["emoji":"😷","tip":0.0],
         ["emoji":"😭","tip":0.01],
@@ -34,6 +36,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        Appearance.createWellFromView(view: containerView)
+        Appearance.createInput(textField: amountTextField)
+        
         updateViews()
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -89,6 +94,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         let num = NSNumber(value: value)
         return numberFormatter.string(from: num)!
     }
+    
     func displayTipLabels (){
         stackView.arrangedSubviews[3].isHidden = false;
         stackView.arrangedSubviews[4].isHidden = false;
@@ -103,7 +109,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         satisfactionLabel.text = "🤔"
         tipLabel.text = ""
         totalLabel.text = ""
-        hideTipLabels()
+        //hideTipLabels()
     }
     
     @IBAction func textFieldDidChange(_ sender: UITextField) {
@@ -121,5 +127,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
             settings.customerSatLevel = customerSatLevel
         }
     }
+    
 }
 

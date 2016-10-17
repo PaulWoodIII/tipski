@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		DA4AFC2E1D89D369001F958A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4AFC2D1D89D369001F958A /* SettingsViewController.swift */; };
 		DA73DDC41D8B19C400BBF37A /* AddEmojiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA73DDC31D8B19C400BBF37A /* AddEmojiViewController.swift */; };
+		DA7F5C331DB14F2F0070FE02 /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7F5C321DB14F2F0070FE02 /* Appearance.swift */; };
+		DA7F5C351DB14F950070FE02 /* TipskiIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7F5C341DB14F950070FE02 /* TipskiIcons.swift */; };
 		DA8B18491D87102000C529D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8B18481D87102000C529D7 /* AppDelegate.swift */; };
 		DA8B184B1D87102000C529D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8B184A1D87102000C529D7 /* ViewController.swift */; };
 		DA8B184E1D87102000C529D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA8B184C1D87102000C529D7 /* Main.storyboard */; };
@@ -39,6 +41,8 @@
 /* Begin PBXFileReference section */
 		DA4AFC2D1D89D369001F958A /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		DA73DDC31D8B19C400BBF37A /* AddEmojiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEmojiViewController.swift; sourceTree = "<group>"; };
+		DA7F5C321DB14F2F0070FE02 /* Appearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
+		DA7F5C341DB14F950070FE02 /* TipskiIcons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipskiIcons.swift; sourceTree = "<group>"; };
 		DA8B18451D87102000C529D7 /* Tipsky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tipsky.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA8B18481D87102000C529D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA8B184A1D87102000C529D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +116,8 @@
 				DA8B18541D87102000C529D7 /* LaunchScreen.storyboard */,
 				DA8B18571D87102000C529D7 /* Info.plist */,
 				DA8B184F1D87102000C529D7 /* Tipsky.xcdatamodeld */,
+				DA7F5C321DB14F2F0070FE02 /* Appearance.swift */,
+				DA7F5C341DB14F950070FE02 /* TipskiIcons.swift */,
 			);
 			path = Tipsky;
 			sourceTree = "<group>";
@@ -275,9 +281,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA73DDC41D8B19C400BBF37A /* AddEmojiViewController.swift in Sources */,
+				DA7F5C331DB14F2F0070FE02 /* Appearance.swift in Sources */,
 				DA8B18511D87102000C529D7 /* Tipsky.xcdatamodeld in Sources */,
 				DA8B184B1D87102000C529D7 /* ViewController.swift in Sources */,
 				DA8B18491D87102000C529D7 /* AppDelegate.swift in Sources */,
+				DA7F5C351DB14F950070FE02 /* TipskiIcons.swift in Sources */,
 				DA4AFC2E1D89D369001F958A /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
