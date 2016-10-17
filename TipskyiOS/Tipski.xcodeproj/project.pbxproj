@@ -47,7 +47,7 @@
 		DA73DDC31D8B19C400BBF37A /* AddEmojiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEmojiViewController.swift; sourceTree = "<group>"; };
 		DA7F5C321DB14F2F0070FE02 /* Appearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
 		DA7F5C341DB14F950070FE02 /* TipskiIcons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipskiIcons.swift; sourceTree = "<group>"; };
-		DA8B18451D87102000C529D7 /* Tipsky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tipsky.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA8B18451D87102000C529D7 /* Tipski.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tipski.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA8B18481D87102000C529D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA8B184A1D87102000C529D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DA8B184D1D87102000C529D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -55,10 +55,10 @@
 		DA8B18521D87102000C529D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA8B18551D87102000C529D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA8B18571D87102000C529D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA8B185C1D87102000C529D7 /* TipskyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipskyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA8B185C1D87102000C529D7 /* TipskiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipskiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA8B18601D87102000C529D7 /* TipskyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipskyTests.swift; sourceTree = "<group>"; };
 		DA8B18621D87102000C529D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA8B18671D87102000C529D7 /* TipskyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipskyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA8B18671D87102000C529D7 /* TipskiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipskiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA8B186B1D87102000C529D7 /* TipskyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipskyUITests.swift; sourceTree = "<group>"; };
 		DA8B186D1D87102000C529D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,9 +91,9 @@
 		DA8B183C1D87102000C529D7 = {
 			isa = PBXGroup;
 			children = (
-				DA8B18471D87102000C529D7 /* Tipsky */,
-				DA8B185F1D87102000C529D7 /* TipskyTests */,
-				DA8B186A1D87102000C529D7 /* TipskyUITests */,
+				DA8B18471D87102000C529D7 /* Tipski */,
+				DA8B185F1D87102000C529D7 /* TipskiTests */,
+				DA8B186A1D87102000C529D7 /* TipskiUITests */,
 				DA8B18461D87102000C529D7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -101,14 +101,14 @@
 		DA8B18461D87102000C529D7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DA8B18451D87102000C529D7 /* Tipsky.app */,
-				DA8B185C1D87102000C529D7 /* TipskyTests.xctest */,
-				DA8B18671D87102000C529D7 /* TipskyUITests.xctest */,
+				DA8B18451D87102000C529D7 /* Tipski.app */,
+				DA8B185C1D87102000C529D7 /* TipskiTests.xctest */,
+				DA8B18671D87102000C529D7 /* TipskiUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DA8B18471D87102000C529D7 /* Tipsky */ = {
+		DA8B18471D87102000C529D7 /* Tipski */ = {
 			isa = PBXGroup;
 			children = (
 				DA8B18481D87102000C529D7 /* AppDelegate.swift */,
@@ -125,33 +125,36 @@
 				DA7F5C321DB14F2F0070FE02 /* Appearance.swift */,
 				DA7F5C341DB14F950070FE02 /* TipskiIcons.swift */,
 			);
+			name = Tipski;
 			path = Tipsky;
 			sourceTree = "<group>";
 		};
-		DA8B185F1D87102000C529D7 /* TipskyTests */ = {
+		DA8B185F1D87102000C529D7 /* TipskiTests */ = {
 			isa = PBXGroup;
 			children = (
 				DA8B18601D87102000C529D7 /* TipskyTests.swift */,
 				DA8B18621D87102000C529D7 /* Info.plist */,
 			);
+			name = TipskiTests;
 			path = TipskyTests;
 			sourceTree = "<group>";
 		};
-		DA8B186A1D87102000C529D7 /* TipskyUITests */ = {
+		DA8B186A1D87102000C529D7 /* TipskiUITests */ = {
 			isa = PBXGroup;
 			children = (
 				DA8B186B1D87102000C529D7 /* TipskyUITests.swift */,
 				DA8B186D1D87102000C529D7 /* Info.plist */,
 			);
+			name = TipskiUITests;
 			path = TipskyUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DA8B18441D87102000C529D7 /* Tipsky */ = {
+		DA8B18441D87102000C529D7 /* Tipski */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DA8B18701D87102000C529D7 /* Build configuration list for PBXNativeTarget "Tipsky" */;
+			buildConfigurationList = DA8B18701D87102000C529D7 /* Build configuration list for PBXNativeTarget "Tipski" */;
 			buildPhases = (
 				DA8B18411D87102000C529D7 /* Sources */,
 				DA8B18421D87102000C529D7 /* Frameworks */,
@@ -161,14 +164,14 @@
 			);
 			dependencies = (
 			);
-			name = Tipsky;
+			name = Tipski;
 			productName = Tipsky;
-			productReference = DA8B18451D87102000C529D7 /* Tipsky.app */;
+			productReference = DA8B18451D87102000C529D7 /* Tipski.app */;
 			productType = "com.apple.product-type.application";
 		};
-		DA8B185B1D87102000C529D7 /* TipskyTests */ = {
+		DA8B185B1D87102000C529D7 /* TipskiTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DA8B18731D87102000C529D7 /* Build configuration list for PBXNativeTarget "TipskyTests" */;
+			buildConfigurationList = DA8B18731D87102000C529D7 /* Build configuration list for PBXNativeTarget "TipskiTests" */;
 			buildPhases = (
 				DA8B18581D87102000C529D7 /* Sources */,
 				DA8B18591D87102000C529D7 /* Frameworks */,
@@ -179,14 +182,14 @@
 			dependencies = (
 				DA8B185E1D87102000C529D7 /* PBXTargetDependency */,
 			);
-			name = TipskyTests;
+			name = TipskiTests;
 			productName = TipskyTests;
-			productReference = DA8B185C1D87102000C529D7 /* TipskyTests.xctest */;
+			productReference = DA8B185C1D87102000C529D7 /* TipskiTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		DA8B18661D87102000C529D7 /* TipskyUITests */ = {
+		DA8B18661D87102000C529D7 /* TipskiUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DA8B18761D87102000C529D7 /* Build configuration list for PBXNativeTarget "TipskyUITests" */;
+			buildConfigurationList = DA8B18761D87102000C529D7 /* Build configuration list for PBXNativeTarget "TipskiUITests" */;
 			buildPhases = (
 				DA8B18631D87102000C529D7 /* Sources */,
 				DA8B18641D87102000C529D7 /* Frameworks */,
@@ -197,9 +200,9 @@
 			dependencies = (
 				DA8B18691D87102000C529D7 /* PBXTargetDependency */,
 			);
-			name = TipskyUITests;
+			name = TipskiUITests;
 			productName = TipskyUITests;
-			productReference = DA8B18671D87102000C529D7 /* TipskyUITests.xctest */;
+			productReference = DA8B18671D87102000C529D7 /* TipskiUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -234,7 +237,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DA8B18401D87102000C529D7 /* Build configuration list for PBXProject "Tipsky" */;
+			buildConfigurationList = DA8B18401D87102000C529D7 /* Build configuration list for PBXProject "Tipski" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -247,9 +250,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DA8B18441D87102000C529D7 /* Tipsky */,
-				DA8B185B1D87102000C529D7 /* TipskyTests */,
-				DA8B18661D87102000C529D7 /* TipskyUITests */,
+				DA8B18441D87102000C529D7 /* Tipski */,
+				DA8B185B1D87102000C529D7 /* TipskiTests */,
+				DA8B18661D87102000C529D7 /* TipskiUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -319,12 +322,12 @@
 /* Begin PBXTargetDependency section */
 		DA8B185E1D87102000C529D7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DA8B18441D87102000C529D7 /* Tipsky */;
+			target = DA8B18441D87102000C529D7 /* Tipski */;
 			targetProxy = DA8B185D1D87102000C529D7 /* PBXContainerItemProxy */;
 		};
 		DA8B18691D87102000C529D7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DA8B18441D87102000C529D7 /* Tipsky */;
+			target = DA8B18441D87102000C529D7 /* Tipski */;
 			targetProxy = DA8B18681D87102000C529D7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -473,7 +476,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.paulwoodiii.TipskyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tipsky.app/Tipsky";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tipski.app/Tipski";
 			};
 			name = Debug;
 		};
@@ -486,7 +489,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.paulwoodiii.TipskyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tipsky.app/Tipsky";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tipski.app/Tipski";
 			};
 			name = Release;
 		};
@@ -517,7 +520,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DA8B18401D87102000C529D7 /* Build configuration list for PBXProject "Tipsky" */ = {
+		DA8B18401D87102000C529D7 /* Build configuration list for PBXProject "Tipski" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DA8B186E1D87102000C529D7 /* Debug */,
@@ -526,7 +529,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DA8B18701D87102000C529D7 /* Build configuration list for PBXNativeTarget "Tipsky" */ = {
+		DA8B18701D87102000C529D7 /* Build configuration list for PBXNativeTarget "Tipski" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DA8B18711D87102000C529D7 /* Debug */,
@@ -535,7 +538,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DA8B18731D87102000C529D7 /* Build configuration list for PBXNativeTarget "TipskyTests" */ = {
+		DA8B18731D87102000C529D7 /* Build configuration list for PBXNativeTarget "TipskiTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DA8B18741D87102000C529D7 /* Debug */,
@@ -544,7 +547,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DA8B18761D87102000C529D7 /* Build configuration list for PBXNativeTarget "TipskyUITests" */ = {
+		DA8B18761D87102000C529D7 /* Build configuration list for PBXNativeTarget "TipskiUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DA8B18771D87102000C529D7 /* Debug */,
