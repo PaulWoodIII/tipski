@@ -45,6 +45,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
+    override var preferredStatusBarStyle : UIStatusBarStyle{
+        get {
+            return UIStatusBarStyle.lightContent
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -113,8 +119,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     func displayError(){
         satisfactionLabel.text = "🤔"
-        tipLabel.text = ""
-        totalLabel.text = ""
+        tipLabel.text = "...?"
+        totalLabel.text = "...?"
         //hideTipLabels()
     }
     

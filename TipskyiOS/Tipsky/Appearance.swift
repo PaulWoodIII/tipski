@@ -9,6 +9,11 @@
 import UIKit
 
 class Appearance {
+    
+    private struct Cache {
+        static let Label30Font = UIFont(name: "OpenSans", size:30)
+    }
+    
     class func setAppearance () {
         
         UIView.appearance().tintColor = TipskiIcons.orangeHighlight
@@ -26,7 +31,7 @@ class Appearance {
         
         UIBarButtonItem.appearance(whenContainedInInstancesOf: [UINavigationBar.self])
             .tintColor = UIColor.white
-
+           
     }
     
     class func reloadViewsFrom(windows : [UIWindow]){
@@ -53,4 +58,5 @@ class Appearance {
         textField.layer.borderWidth = 1
         textField.layer.borderColor = TipskiIcons.foreground1.cgColor
     }
+    
 }

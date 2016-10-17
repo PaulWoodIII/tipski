@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA3F733D1DB51BA50026A7BA /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA3F733B1DB51BA50026A7BA /* OpenSans-Regular.ttf */; };
+		DA3F733E1DB51BA50026A7BA /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA3F733C1DB51BA50026A7BA /* OpenSans-Semibold.ttf */; };
 		DA4AFC2E1D89D369001F958A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4AFC2D1D89D369001F958A /* SettingsViewController.swift */; };
 		DA73DDC41D8B19C400BBF37A /* AddEmojiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA73DDC31D8B19C400BBF37A /* AddEmojiViewController.swift */; };
 		DA7F5C331DB14F2F0070FE02 /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7F5C321DB14F2F0070FE02 /* Appearance.swift */; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA3F733B1DB51BA50026A7BA /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		DA3F733C1DB51BA50026A7BA /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
 		DA4AFC2D1D89D369001F958A /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		DA73DDC31D8B19C400BBF37A /* AddEmojiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEmojiViewController.swift; sourceTree = "<group>"; };
 		DA7F5C321DB14F2F0070FE02 /* Appearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
@@ -111,6 +115,8 @@
 				DA8B184A1D87102000C529D7 /* ViewController.swift */,
 				DA4AFC2D1D89D369001F958A /* SettingsViewController.swift */,
 				DA73DDC31D8B19C400BBF37A /* AddEmojiViewController.swift */,
+				DA3F733B1DB51BA50026A7BA /* OpenSans-Regular.ttf */,
+				DA3F733C1DB51BA50026A7BA /* OpenSans-Semibold.ttf */,
 				DA8B184C1D87102000C529D7 /* Main.storyboard */,
 				DA8B18521D87102000C529D7 /* Assets.xcassets */,
 				DA8B18541D87102000C529D7 /* LaunchScreen.storyboard */,
@@ -255,7 +261,9 @@
 			files = (
 				DA8B18561D87102000C529D7 /* LaunchScreen.storyboard in Resources */,
 				DA8B18531D87102000C529D7 /* Assets.xcassets in Resources */,
+				DA3F733D1DB51BA50026A7BA /* OpenSans-Regular.ttf in Resources */,
 				DA8B184E1D87102000C529D7 /* Main.storyboard in Resources */,
+				DA3F733E1DB51BA50026A7BA /* OpenSans-Semibold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
