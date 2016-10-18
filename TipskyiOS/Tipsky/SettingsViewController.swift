@@ -10,7 +10,12 @@ import UIKit
 
 class SettingsViewController: UITableViewController, UIPopoverControllerDelegate, AddEmojiDelegate {
 
-    var customerSatLevel : [[String:Any?]]!
+    var customerSatLevel : Array<TipEmoji>!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        customerSatLevel = Datastore.shared.tipEmojis
+    }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -23,9 +28,7 @@ class SettingsViewController: UITableViewController, UIPopoverControllerDelegate
     
     func goBack(){
         //Something should happen here like updating the array
-        if let home = self.presentingViewController as? ViewController {
-            home.customerSatLevel = customerSatLevel;
-        }
+        Datastore.shared.tipEmojis = customerSatLevel
         self.presentingViewController?.dismiss(animated: true, completion: nil)
     }
     
@@ -42,7 +45,7 @@ class SettingsViewController: UITableViewController, UIPopoverControllerDelegate
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "EmojiCell", for: indexPath)
         let object = customerSatLevel[indexPath.row]
-        cell.textLabel!.text = object["emoji"] as? String
+        cell.textLabel!.text = object.emoji
         return cell
     }
     
@@ -84,9 +87,9 @@ class SettingsViewController: UITableViewController, UIPopoverControllerDelegate
         }
     }
     
-    func didAddEmojiWith(dictionary: [String : Any?]) {
+    func didAddEmoji(tipEmoji: TipEmoji) {
         //Add To Items
-        customerSatLevel.insert(dictionary, at: 0)
+        customerSatLevel.insert(tipEmoji, at: 0)
         //Create Index
         let idx = IndexPath(row: 0, section: 0)
         //Add Index to Table View

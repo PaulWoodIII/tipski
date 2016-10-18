@@ -26,16 +26,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet var doneToolbar: UIToolbar!
     
-    var customerSatLevel = [
-        ["emoji":"😷","tip":0.0],
-        ["emoji":"😭","tip":0.01],
-        ["emoji":"😕","tip":0.08],
-        ["emoji":"😶","tip":0.12],
-        ["emoji":"🙂","tip":0.15],
-        ["emoji":"😀","tip":0.18],
-        ["emoji":"😍","tip":0.5]
-    ]
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         Appearance.createWellFromView(view: containerView)
@@ -70,20 +60,20 @@ class ViewController: UIViewController, UITextFieldDelegate {
         displayTipLabels()
         let sat = Double(satisfactionSlider.value)
 
-        let increment = 1.0 / Double(customerSatLevel.count)
+        let increment = 1.0 / Double(Datastore.shared.tipEmojis.count)
         var minBounds = 0.0
-        var foundSat = customerSatLevel[0]
+        var foundSat : TipEmoji = Datastore.shared.tipEmojis[0]
         
-        for i in 0..<customerSatLevel.count {
+        for i in 0..<Datastore.shared.tipEmojis.count {
             if(minBounds > sat){
                 break
             }
             minBounds = minBounds + increment;
-            foundSat = customerSatLevel[i]
+            foundSat = Datastore.shared.tipEmojis[i]
         }
         
-        let satisfactionText = foundSat["emoji"] as! String!
-        let tip : Double! = foundSat["tip"] as! Double!
+        let satisfactionText = foundSat.emoji
+        let tip : Double! = foundSat.tipAmount
         
         
         satisfactionLabel.text = satisfactionText
@@ -130,14 +120,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBAction func settingsPressed() {
         self.performSegue(withIdentifier: "showSettings", sender: nil)
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let nav = segue.destination as? UINavigationController,
-            let settings = nav.topViewController as? SettingsViewController
-            {
-            settings.customerSatLevel = customerSatLevel
-        }
     }
     
 }

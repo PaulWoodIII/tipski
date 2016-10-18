@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DA3F733D1DB51BA50026A7BA /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA3F733B1DB51BA50026A7BA /* OpenSans-Regular.ttf */; };
-		DA3F733E1DB51BA50026A7BA /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA3F733C1DB51BA50026A7BA /* OpenSans-Semibold.ttf */; };
+		DA3F73431DB65B310026A7BA /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA3F73411DB65B310026A7BA /* OpenSans-Regular.ttf */; };
+		DA3F73441DB65B310026A7BA /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA3F73421DB65B310026A7BA /* OpenSans-Semibold.ttf */; };
+		DA3F73771DB65D590026A7BA /* Datastore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F73761DB65D590026A7BA /* Datastore.swift */; };
+		DA3F73791DB65D910026A7BA /* TipEmojis.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F73781DB65D910026A7BA /* TipEmojis.swift */; };
+		DA3F737B1DB6620C0026A7BA /* String+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F737A1DB6620C0026A7BA /* String+Utils.swift */; };
 		DA4AFC2E1D89D369001F958A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4AFC2D1D89D369001F958A /* SettingsViewController.swift */; };
 		DA73DDC41D8B19C400BBF37A /* AddEmojiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA73DDC31D8B19C400BBF37A /* AddEmojiViewController.swift */; };
 		DA7F5C331DB14F2F0070FE02 /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7F5C321DB14F2F0070FE02 /* Appearance.swift */; };
@@ -16,7 +19,6 @@
 		DA8B18491D87102000C529D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8B18481D87102000C529D7 /* AppDelegate.swift */; };
 		DA8B184B1D87102000C529D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8B184A1D87102000C529D7 /* ViewController.swift */; };
 		DA8B184E1D87102000C529D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA8B184C1D87102000C529D7 /* Main.storyboard */; };
-		DA8B18511D87102000C529D7 /* Tipsky.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA8B184F1D87102000C529D7 /* Tipsky.xcdatamodeld */; };
 		DA8B18531D87102000C529D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA8B18521D87102000C529D7 /* Assets.xcassets */; };
 		DA8B18561D87102000C529D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA8B18541D87102000C529D7 /* LaunchScreen.storyboard */; };
 		DA8B18611D87102000C529D7 /* TipskyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8B18601D87102000C529D7 /* TipskyTests.swift */; };
@@ -41,8 +43,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DA3F733B1DB51BA50026A7BA /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
-		DA3F733C1DB51BA50026A7BA /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
+		DA3F73411DB65B310026A7BA /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		DA3F73421DB65B310026A7BA /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
+		DA3F73761DB65D590026A7BA /* Datastore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Datastore.swift; sourceTree = "<group>"; };
+		DA3F73781DB65D910026A7BA /* TipEmojis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipEmojis.swift; sourceTree = "<group>"; };
+		DA3F737A1DB6620C0026A7BA /* String+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Utils.swift"; sourceTree = "<group>"; };
 		DA4AFC2D1D89D369001F958A /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		DA73DDC31D8B19C400BBF37A /* AddEmojiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEmojiViewController.swift; sourceTree = "<group>"; };
 		DA7F5C321DB14F2F0070FE02 /* Appearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
@@ -51,7 +56,6 @@
 		DA8B18481D87102000C529D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA8B184A1D87102000C529D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DA8B184D1D87102000C529D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DA8B18501D87102000C529D7 /* Tipsky.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Tipsky.xcdatamodel; sourceTree = "<group>"; };
 		DA8B18521D87102000C529D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA8B18551D87102000C529D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA8B18571D87102000C529D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -88,6 +92,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA3F73401DB65B310026A7BA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DA3F73411DB65B310026A7BA /* OpenSans-Regular.ttf */,
+				DA3F73421DB65B310026A7BA /* OpenSans-Semibold.ttf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		DA8B183C1D87102000C529D7 = {
 			isa = PBXGroup;
 			children = (
@@ -111,19 +124,20 @@
 		DA8B18471D87102000C529D7 /* Tipski */ = {
 			isa = PBXGroup;
 			children = (
+				DA3F73401DB65B310026A7BA /* Resources */,
 				DA8B18481D87102000C529D7 /* AppDelegate.swift */,
 				DA8B184A1D87102000C529D7 /* ViewController.swift */,
 				DA4AFC2D1D89D369001F958A /* SettingsViewController.swift */,
 				DA73DDC31D8B19C400BBF37A /* AddEmojiViewController.swift */,
-				DA3F733B1DB51BA50026A7BA /* OpenSans-Regular.ttf */,
-				DA3F733C1DB51BA50026A7BA /* OpenSans-Semibold.ttf */,
 				DA8B184C1D87102000C529D7 /* Main.storyboard */,
 				DA8B18521D87102000C529D7 /* Assets.xcassets */,
 				DA8B18541D87102000C529D7 /* LaunchScreen.storyboard */,
 				DA8B18571D87102000C529D7 /* Info.plist */,
-				DA8B184F1D87102000C529D7 /* Tipsky.xcdatamodeld */,
 				DA7F5C321DB14F2F0070FE02 /* Appearance.swift */,
 				DA7F5C341DB14F950070FE02 /* TipskiIcons.swift */,
+				DA3F73761DB65D590026A7BA /* Datastore.swift */,
+				DA3F73781DB65D910026A7BA /* TipEmojis.swift */,
+				DA3F737A1DB6620C0026A7BA /* String+Utils.swift */,
 			);
 			name = Tipski;
 			path = Tipsky;
@@ -264,9 +278,9 @@
 			files = (
 				DA8B18561D87102000C529D7 /* LaunchScreen.storyboard in Resources */,
 				DA8B18531D87102000C529D7 /* Assets.xcassets in Resources */,
-				DA3F733D1DB51BA50026A7BA /* OpenSans-Regular.ttf in Resources */,
 				DA8B184E1D87102000C529D7 /* Main.storyboard in Resources */,
-				DA3F733E1DB51BA50026A7BA /* OpenSans-Semibold.ttf in Resources */,
+				DA3F73431DB65B310026A7BA /* OpenSans-Regular.ttf in Resources */,
+				DA3F73441DB65B310026A7BA /* OpenSans-Semibold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,10 +307,12 @@
 			files = (
 				DA73DDC41D8B19C400BBF37A /* AddEmojiViewController.swift in Sources */,
 				DA7F5C331DB14F2F0070FE02 /* Appearance.swift in Sources */,
-				DA8B18511D87102000C529D7 /* Tipsky.xcdatamodeld in Sources */,
+				DA3F737B1DB6620C0026A7BA /* String+Utils.swift in Sources */,
 				DA8B184B1D87102000C529D7 /* ViewController.swift in Sources */,
 				DA8B18491D87102000C529D7 /* AppDelegate.swift in Sources */,
+				DA3F73771DB65D590026A7BA /* Datastore.swift in Sources */,
 				DA7F5C351DB14F950070FE02 /* TipskiIcons.swift in Sources */,
+				DA3F73791DB65D910026A7BA /* TipEmojis.swift in Sources */,
 				DA4AFC2E1D89D369001F958A /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -557,19 +573,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		DA8B184F1D87102000C529D7 /* Tipsky.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				DA8B18501D87102000C529D7 /* Tipsky.xcdatamodel */,
-			);
-			currentVersion = DA8B18501D87102000C529D7 /* Tipsky.xcdatamodel */;
-			path = Tipsky.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = DA8B183D1D87102000C529D7 /* Project object */;
 }

@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 protocol AddEmojiDelegate : class {
-    func didAddEmojiWith(dictionary : [String:Any?])
+    func didAddEmoji(tipEmoji: TipEmoji)
 }
 
 class AddEmojiViewController : UIViewController {
@@ -21,27 +21,27 @@ class AddEmojiViewController : UIViewController {
     
     @IBOutlet weak var tipTextField: UITextField!
     
-    var newItem = [String:Any?]()
+    var newItem = TipEmoji(emoji: "",tipAmount: 0)
     
     @IBAction func emojiTextDidChange(_ sender: AnyObject) {
         
         if let newText = emojiTextField.text {
-            newItem["emoji"] = newText
+            newItem.emoji = newText
         }
     }
     
     @IBAction func tipAmountDidChange(_ sender: AnyObject) {
         if let newTip = tipTextField.text,
             let tipDouble = Double(newTip){
-            newItem["tip"] = tipDouble
+            newItem.tipAmount = tipDouble
         }
         else {
-            newItem["tip"] = Double(0)
+            newItem.tipAmount = Double(0)
         }
     }
 
     @IBAction func addButtonPressed(_ sender: AnyObject) {
-        delegate?.didAddEmojiWith(dictionary: newItem)
+        delegate?.didAddEmoji(tipEmoji: newItem)
     }
     
 }
