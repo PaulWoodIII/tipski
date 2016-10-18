@@ -26,10 +26,22 @@ class SettingsViewController: UITableViewController, UIPopoverControllerDelegate
         goBack()
     }
     
+    @IBAction func sortPressed(_ sender: AnyObject) {
+        sortList()
+    }
+    
     func goBack(){
         //Something should happen here like updating the array
         Datastore.shared.tipEmojis = customerSatLevel
         self.presentingViewController?.dismiss(animated: true, completion: nil)
+    }
+    
+    func sortList(){
+        customerSatLevel =
+            customerSatLevel.sorted(by: {
+                return $0.tipAmount < $1.tipAmount
+            })
+        self.tableView.reloadData()
     }
     
     // MARK: - Table View

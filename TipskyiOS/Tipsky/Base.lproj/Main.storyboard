@@ -4,6 +4,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -212,11 +213,18 @@
                                 <action selector="donePressed:" destination="u7D-39-wqQ" id="Prf-k5-Nfk"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="c9e-xP-Cdm">
-                            <connections>
-                                <segue destination="KbA-89-opk" kind="show" id="1dv-xm-bug"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="add" id="c9e-xP-Cdm">
+                                <connections>
+                                    <segue destination="KbA-89-opk" kind="show" id="1dv-xm-bug"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem image="sortAscending" id="e99-KU-tRo">
+                                <connections>
+                                    <action selector="sortPressed:" destination="u7D-39-wqQ" id="vs7-wq-uF9"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AL4-XH-DRx" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -327,4 +335,7 @@
             <point key="canvasLocation" x="1738" y="828"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="sortAscending" width="30" height="23"/>
+    </resources>
 </document>
