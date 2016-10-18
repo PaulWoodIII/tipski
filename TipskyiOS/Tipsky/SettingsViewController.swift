@@ -46,6 +46,7 @@ class SettingsViewController: UITableViewController, UIPopoverControllerDelegate
         let cell = tableView.dequeueReusableCell(withIdentifier: "EmojiCell", for: indexPath)
         let object = customerSatLevel[indexPath.row]
         cell.textLabel!.text = object.emoji
+        cell.detailTextLabel!.text = "\(object.tipAmount)"
         return cell
     }
     
