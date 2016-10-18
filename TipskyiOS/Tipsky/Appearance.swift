@@ -59,4 +59,11 @@ class Appearance {
         textField.layer.borderColor = TipskiIcons.foreground1.cgColor
     }
     
+    class func createSubmitButton(button : UIButton){
+        button.backgroundColor = TipskiIcons.greenHighlight
+        button.layer.cornerRadius = 22.0
+        button.layer.masksToBounds = true
+        button.layer.borderWidth = 1
+        button.layer.borderColor = TipskiIcons.green.cgColor
+    }
 }

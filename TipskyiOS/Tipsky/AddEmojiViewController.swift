@@ -21,7 +21,19 @@ class AddEmojiViewController : UIViewController {
     
     @IBOutlet weak var tipTextField: UITextField!
     
+    @IBOutlet weak var addButton: UIButton!
+    
+    @IBOutlet weak var containerView: UIView!
+    
     var newItem = TipEmoji(emoji: "",tipAmount: 0)
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        Appearance.createWellFromView(view: containerView)
+        Appearance.createInput(textField: emojiTextField)
+        Appearance.createInput(textField: tipTextField)
+        Appearance.createSubmitButton(button: addButton)
+    }
     
     @IBAction func emojiTextDidChange(_ sender: AnyObject) {
         

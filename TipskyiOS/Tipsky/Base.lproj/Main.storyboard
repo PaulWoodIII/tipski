@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,18 +15,18 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tipsky" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tipski" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZfW-ON-syt">
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="mCT-BI-62S">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mCT-BI-62S">
                                         <subviews>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your Bill" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="MOo-K8-RnY">
                                                 <constraints>
@@ -56,14 +55,12 @@
                                             </slider>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="HJE-7r-Kt2">
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" ambiguous="YES" text="Tip: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dsU-IC-E6f">
-                                                        <frame key="frameInset" width="34" height="24"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" horizontalCompressionResistancePriority="1000" text="Tip: " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dsU-IC-E6f">
                                                         <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="17"/>
                                                         <color key="textColor" red="0.29019609089999998" green="0.30980393290000002" blue="0.43921568989999998" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" ambiguous="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d9d-1g-F4g">
-                                                        <frame key="frameInset" minX="34" width="43" height="24"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d9d-1g-F4g">
                                                         <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="17"/>
                                                         <color key="textColor" red="0.29019609089999998" green="0.30980393290000002" blue="0.43921568989999998" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -72,7 +69,7 @@
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Nvn-vp-nU6">
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="751" text="Total: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AdH-31-www">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" horizontalCompressionResistancePriority="1000" text="Total: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AdH-31-www">
                                                         <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="17"/>
                                                         <color key="textColor" red="0.29019609089999998" green="0.30980393290000002" blue="0.43921568989999998" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -87,7 +84,11 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Og-dk-jQo">
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hrS-xu-z2i">
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="44" id="LHH-BZ-wHm"/>
+                                                            <constraint firstAttribute="width" priority="250" constant="1000" id="nNr-KW-Sei"/>
+                                                        </constraints>
                                                     </view>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K1D-EV-u4e">
                                                         <connections>
@@ -98,8 +99,11 @@
                                             </stackView>
                                         </subviews>
                                         <constraints>
+                                            <constraint firstItem="Nvn-vp-nU6" firstAttribute="width" secondItem="HJE-7r-Kt2" secondAttribute="width" id="Jrd-El-e8X"/>
                                             <constraint firstItem="YCB-9v-NEA" firstAttribute="width" secondItem="mCT-BI-62S" secondAttribute="width" id="Wi5-df-yW1"/>
+                                            <constraint firstItem="AdH-31-www" firstAttribute="width" secondItem="dsU-IC-E6f" secondAttribute="width" id="Yyp-lu-Eq0"/>
                                             <constraint firstItem="MOo-K8-RnY" firstAttribute="width" secondItem="mCT-BI-62S" secondAttribute="width" multiplier="2/3" constant="-5.6666666666666572" id="b9j-wW-1ba"/>
+                                            <constraint firstItem="Rrs-cC-92g" firstAttribute="width" secondItem="d9d-1g-F4g" secondAttribute="width" id="lPr-fY-ttY"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
@@ -114,8 +118,8 @@
                         </subviews>
                         <color key="backgroundColor" red="0.21176470820000001" green="0.22352941330000001" blue="0.31764706970000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="ZfW-ON-syt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="AIi-Ya-9JI"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ZfW-ON-syt" secondAttribute="trailing" constant="20" id="K0Z-W1-R9Z"/>
+                            <constraint firstItem="ZfW-ON-syt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="AIi-Ya-9JI"/>
+                            <constraint firstAttribute="trailing" secondItem="ZfW-ON-syt" secondAttribute="trailing" constant="30" id="K0Z-W1-R9Z"/>
                             <constraint firstItem="ZfW-ON-syt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="Xkf-xJ-PZL"/>
                         </constraints>
                     </view>
@@ -166,17 +170,17 @@
         <!--Settings View Controller-->
         <scene sceneID="rfB-vK-vWu">
             <objects>
-                <tableViewController id="u7D-39-wqQ" customClass="SettingsViewController" customModule="Tipsky" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="u7D-39-wqQ" customClass="SettingsViewController" customModule="Tipski" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Owl-OF-jTr">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EmojiCell" id="rV2-dh-Dax">
-                                <rect key="frame" x="0.0" y="92" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rV2-dh-Dax" id="jzM-Bm-hhz">
-                                    <frame key="frameInset" width="320" height="43"/>
+                                    <frame key="frameInset" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -206,91 +210,98 @@
         <!--Add Emoji View Controller-->
         <scene sceneID="tEK-qa-qnV">
             <objects>
-                <viewController id="KbA-89-opk" customClass="AddEmojiViewController" customModule="Tipsky" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="KbA-89-opk" customClass="AddEmojiViewController" customModule="Tipski" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OiR-dM-YZz"/>
                         <viewControllerLayoutGuide type="bottom" id="y16-xE-uvJ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Yr1-d3-Mxg">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="HqK-B6-pmz">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JeQ-hS-fg9">
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="wjl-Ct-PT7">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="HqK-B6-pmz">
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cn7-lP-auX">
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hSt-lx-ph3">
-                                                <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                                <connections>
-                                                    <action selector="emojiTextDidChange:" destination="KbA-89-opk" eventType="editingChanged" id="9RO-ov-ez5"/>
-                                                </connections>
-                                            </textField>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstItem="hSt-lx-ph3" firstAttribute="width" secondItem="Cn7-lP-auX" secondAttribute="width" multiplier="1.61" id="32T-fw-wjR"/>
-                                        </constraints>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="xgi-KB-TFV">
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kEH-mB-x2d">
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DVq-sG-fQM">
-                                                <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
-                                                <connections>
-                                                    <action selector="tipAmountDidChange:" destination="KbA-89-opk" eventType="editingChanged" id="TDI-qy-hDf"/>
-                                                </connections>
-                                            </textField>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstItem="DVq-sG-fQM" firstAttribute="width" secondItem="kEH-mB-x2d" secondAttribute="width" multiplier="1.61" id="w2m-yW-zeJ"/>
-                                        </constraints>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JT2-ce-WtI">
-                                        <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Egu-1x-RMN">
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            </view>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Al0-Gx-Epr">
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="wjl-Ct-PT7">
+                                                <subviews>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Emoji Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hSt-lx-ph3">
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="44" id="PQ2-Bj-Gf5"/>
+                                                        </constraints>
+                                                        <color key="textColor" red="0.29019609089999998" green="0.30980393290000002" blue="0.43921568989999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <connections>
+                                                            <action selector="emojiTextDidChange:" destination="KbA-89-opk" eventType="editingChanged" id="9RO-ov-ez5"/>
+                                                        </connections>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="xgi-KB-TFV">
+                                                <subviews>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tip Percentage like .09" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DVq-sG-fQM">
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="44" id="gbR-6L-yWK"/>
+                                                        </constraints>
+                                                        <color key="textColor" red="0.29019609089999998" green="0.30980393290000002" blue="0.43921568989999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                        <connections>
+                                                            <action selector="tipAmountDidChange:" destination="KbA-89-opk" eventType="editingChanged" id="TDI-qy-hDf"/>
+                                                        </connections>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JT2-ce-WtI">
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Egu-1x-RMN">
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    </view>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Al0-Gx-Epr">
+                                                        <color key="backgroundColor" red="0.69385772943496704" green="0.74307656288146973" blue="0.162619948387146" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="44" id="hrP-Gn-u2x"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Submit">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="addButtonPressed:" destination="KbA-89-opk" eventType="touchUpInside" id="Jm8-KY-ab8"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="44" id="hrP-Gn-u2x"/>
+                                                    <constraint firstItem="Al0-Gx-Epr" firstAttribute="width" secondItem="Egu-1x-RMN" secondAttribute="width" multiplier="0.6211" id="5SC-BD-UhY"/>
                                                 </constraints>
-                                                <connections>
-                                                    <action selector="addButtonPressed:" destination="KbA-89-opk" eventType="touchUpInside" id="Jm8-KY-ab8"/>
-                                                </connections>
-                                            </button>
+                                            </stackView>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="Al0-Gx-Epr" firstAttribute="width" secondItem="Egu-1x-RMN" secondAttribute="width" multiplier="0.6211" id="5SC-BD-UhY"/>
+                                            <constraint firstItem="JT2-ce-WtI" firstAttribute="width" secondItem="HqK-B6-pmz" secondAttribute="width" id="T4t-UR-00l"/>
+                                            <constraint firstItem="xgi-KB-TFV" firstAttribute="width" secondItem="HqK-B6-pmz" secondAttribute="width" id="jqr-jf-IAg"/>
+                                            <constraint firstItem="wjl-Ct-PT7" firstAttribute="width" secondItem="HqK-B6-pmz" secondAttribute="width" id="plt-zd-oCu"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
+                                <color key="backgroundColor" red="0.9567099214" green="0.9566277862" blue="0.97307187319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="JT2-ce-WtI" firstAttribute="width" secondItem="HqK-B6-pmz" secondAttribute="width" id="T4t-UR-00l"/>
-                                    <constraint firstItem="xgi-KB-TFV" firstAttribute="width" secondItem="HqK-B6-pmz" secondAttribute="width" id="jqr-jf-IAg"/>
-                                    <constraint firstItem="wjl-Ct-PT7" firstAttribute="width" secondItem="HqK-B6-pmz" secondAttribute="width" id="plt-zd-oCu"/>
+                                    <constraint firstItem="HqK-B6-pmz" firstAttribute="leading" secondItem="JeQ-hS-fg9" secondAttribute="leading" constant="20" id="Cwv-DZ-B9U"/>
+                                    <constraint firstItem="HqK-B6-pmz" firstAttribute="top" secondItem="JeQ-hS-fg9" secondAttribute="top" constant="20" id="NMg-Lm-t99"/>
+                                    <constraint firstAttribute="trailing" secondItem="HqK-B6-pmz" secondAttribute="trailing" constant="20" id="t9E-1o-i1D"/>
+                                    <constraint firstAttribute="bottom" secondItem="HqK-B6-pmz" secondAttribute="bottom" constant="20" id="vnd-pf-JBL"/>
                                 </constraints>
-                            </stackView>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.21176470820000001" green="0.22352941330000001" blue="0.31764706970000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="HqK-B6-pmz" firstAttribute="top" secondItem="OiR-dM-YZz" secondAttribute="bottom" id="9Ae-Y2-4Hd"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="HqK-B6-pmz" secondAttribute="trailing" id="mY7-Bc-icV"/>
-                            <constraint firstItem="HqK-B6-pmz" firstAttribute="leading" secondItem="Yr1-d3-Mxg" secondAttribute="leadingMargin" id="nZ2-EG-4ip"/>
+                            <constraint firstAttribute="trailing" secondItem="JeQ-hS-fg9" secondAttribute="trailing" constant="30" id="CD7-lv-qKJ"/>
+                            <constraint firstItem="JeQ-hS-fg9" firstAttribute="top" secondItem="OiR-dM-YZz" secondAttribute="bottom" constant="24" id="f0f-ia-vst"/>
+                            <constraint firstItem="JeQ-hS-fg9" firstAttribute="leading" secondItem="Yr1-d3-Mxg" secondAttribute="leading" constant="30" id="nAt-ws-ss1"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="addButton" destination="Al0-Gx-Epr" id="DQx-Wt-99A"/>
+                        <outlet property="containerView" destination="JeQ-hS-fg9" id="nWb-9w-qrx"/>
                         <outlet property="emojiTextField" destination="hSt-lx-ph3" id="P57-rp-8F9"/>
                         <outlet property="tipTextField" destination="DVq-sG-fQM" id="NlQ-CS-roF"/>
                     </connections>
