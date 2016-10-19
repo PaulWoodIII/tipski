@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA0F8FA61DB7E5D700AF2791 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0F8FA51DB7E5D700AF2791 /* AboutViewController.swift */; };
+		DA0F8FA81DB7ED1A00AF2791 /* UnlockableTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0F8FA71DB7ED1A00AF2791 /* UnlockableTabBar.swift */; };
+		DA0F8FAA1DB7F3A700AF2791 /* BellHopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0F8FA91DB7F3A700AF2791 /* BellHopViewController.swift */; };
+		DA0F8FAC1DB7F3B100AF2791 /* MaidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0F8FAB1DB7F3B100AF2791 /* MaidViewController.swift */; };
+		DA0F8FAE1DB7F3D500AF2791 /* MoversViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0F8FAD1DB7F3D500AF2791 /* MoversViewController.swift */; };
+		DA0F8FB01DB7F3E000AF2791 /* BartenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0F8FAF1DB7F3E000AF2791 /* BartenderViewController.swift */; };
+		DA0F8FB21DB7F3F200AF2791 /* TaxiDriversViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0F8FB11DB7F3F200AF2791 /* TaxiDriversViewController.swift */; };
+		DA0F8FB41DB7F40600AF2791 /* BusDriversViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0F8FB31DB7F40600AF2791 /* BusDriversViewController.swift */; };
+		DA0F8FB61DB7FD5100AF2791 /* WaitstaffViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0F8FB51DB7FD5100AF2791 /* WaitstaffViewController.swift */; };
 		DA3F73431DB65B310026A7BA /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA3F73411DB65B310026A7BA /* OpenSans-Regular.ttf */; };
 		DA3F73441DB65B310026A7BA /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA3F73421DB65B310026A7BA /* OpenSans-Semibold.ttf */; };
 		DA3F73771DB65D590026A7BA /* Datastore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F73761DB65D590026A7BA /* Datastore.swift */; };
@@ -43,6 +52,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA0F8FA51DB7E5D700AF2791 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		DA0F8FA71DB7ED1A00AF2791 /* UnlockableTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnlockableTabBar.swift; sourceTree = "<group>"; };
+		DA0F8FA91DB7F3A700AF2791 /* BellHopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BellHopViewController.swift; sourceTree = "<group>"; };
+		DA0F8FAB1DB7F3B100AF2791 /* MaidViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaidViewController.swift; sourceTree = "<group>"; };
+		DA0F8FAD1DB7F3D500AF2791 /* MoversViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoversViewController.swift; sourceTree = "<group>"; };
+		DA0F8FAF1DB7F3E000AF2791 /* BartenderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BartenderViewController.swift; sourceTree = "<group>"; };
+		DA0F8FB11DB7F3F200AF2791 /* TaxiDriversViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaxiDriversViewController.swift; sourceTree = "<group>"; };
+		DA0F8FB31DB7F40600AF2791 /* BusDriversViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusDriversViewController.swift; sourceTree = "<group>"; };
+		DA0F8FB51DB7FD5100AF2791 /* WaitstaffViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaitstaffViewController.swift; sourceTree = "<group>"; };
 		DA3F73411DB65B310026A7BA /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		DA3F73421DB65B310026A7BA /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
 		DA3F73761DB65D590026A7BA /* Datastore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Datastore.swift; sourceTree = "<group>"; };
@@ -138,6 +156,15 @@
 				DA3F73761DB65D590026A7BA /* Datastore.swift */,
 				DA3F73781DB65D910026A7BA /* TipEmojis.swift */,
 				DA3F737A1DB6620C0026A7BA /* String+Utils.swift */,
+				DA0F8FA51DB7E5D700AF2791 /* AboutViewController.swift */,
+				DA0F8FA71DB7ED1A00AF2791 /* UnlockableTabBar.swift */,
+				DA0F8FB51DB7FD5100AF2791 /* WaitstaffViewController.swift */,
+				DA0F8FA91DB7F3A700AF2791 /* BellHopViewController.swift */,
+				DA0F8FAB1DB7F3B100AF2791 /* MaidViewController.swift */,
+				DA0F8FAD1DB7F3D500AF2791 /* MoversViewController.swift */,
+				DA0F8FAF1DB7F3E000AF2791 /* BartenderViewController.swift */,
+				DA0F8FB11DB7F3F200AF2791 /* TaxiDriversViewController.swift */,
+				DA0F8FB31DB7F40600AF2791 /* BusDriversViewController.swift */,
 			);
 			name = Tipski;
 			path = Tipsky;
@@ -306,13 +333,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA73DDC41D8B19C400BBF37A /* AddEmojiViewController.swift in Sources */,
+				DA0F8FA81DB7ED1A00AF2791 /* UnlockableTabBar.swift in Sources */,
 				DA7F5C331DB14F2F0070FE02 /* Appearance.swift in Sources */,
+				DA0F8FAA1DB7F3A700AF2791 /* BellHopViewController.swift in Sources */,
 				DA3F737B1DB6620C0026A7BA /* String+Utils.swift in Sources */,
 				DA8B184B1D87102000C529D7 /* ViewController.swift in Sources */,
+				DA0F8FB61DB7FD5100AF2791 /* WaitstaffViewController.swift in Sources */,
 				DA8B18491D87102000C529D7 /* AppDelegate.swift in Sources */,
 				DA3F73771DB65D590026A7BA /* Datastore.swift in Sources */,
 				DA7F5C351DB14F950070FE02 /* TipskiIcons.swift in Sources */,
 				DA3F73791DB65D910026A7BA /* TipEmojis.swift in Sources */,
+				DA0F8FB41DB7F40600AF2791 /* BusDriversViewController.swift in Sources */,
+				DA0F8FA61DB7E5D700AF2791 /* AboutViewController.swift in Sources */,
+				DA0F8FAC1DB7F3B100AF2791 /* MaidViewController.swift in Sources */,
+				DA0F8FB01DB7F3E000AF2791 /* BartenderViewController.swift in Sources */,
+				DA0F8FAE1DB7F3D500AF2791 /* MoversViewController.swift in Sources */,
+				DA0F8FB21DB7F3F200AF2791 /* TaxiDriversViewController.swift in Sources */,
 				DA4AFC2E1D89D369001F958A /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
