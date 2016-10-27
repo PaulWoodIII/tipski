@@ -18,11 +18,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
         // Override point for customization after application launch.
+        NotificationCenter.default.addObserver(self, selector: #selector(fullUnlockChanged), name: FullUnlockChangedNotification, object: nil)
+        updateActiveTabBarController()
         Appearance.setAppearance()
         Appearance.reloadViewsFrom(windows: application.windows)
         PurchaseManager.shared.loadStore()
         return true
     }
+
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -52,6 +55,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func saveContent(){
         Datastore.shared.persist()
+    }
+    
+    func fullUnlockChanged(note : Notification){
+        updateActiveTabBarController()
+    }
+    
+    let fullTabBarViewController = {
+        return UIStoryboard(name: "Main", bundle: nil)
+            .instantiateViewController(withIdentifier: ViewControllerIdentifiers.fullTabBarController.rawValue) as! UITabBarController
+    }()
+    let partialTabBarViewController = {
+        return UIStoryboard(name: "Main", bundle: nil)
+            .instantiateViewController(withIdentifier: ViewControllerIdentifiers.partialTabBarController.rawValue) as! UITabBarController
+    }()
+    
+    func updateActiveTabBarController(){
+        let window = UIApplication.shared.windows.first!
+        if UserDefaults.standard.bool(forKey: FullUnlock) {
+            window.rootViewController = fullTabBarViewController
+        }
+        else {
+            window.rootViewController = partialTabBarViewController
+        }
     }
 
 }

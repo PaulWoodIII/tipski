@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Opc-0a-T9g">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="97D-0D-OeH">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -14,10 +14,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Unlockable Tab Bar-->
+        <!--Tab Bar Controller-->
         <scene sceneID="qht-Xm-HcJ">
             <objects>
-                <tabBarController id="Opc-0a-T9g" customClass="UnlockableTabBar" customModule="Tipski" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="FullTabBarController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Opc-0a-T9g" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="ncu-xb-rpk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -922,6 +922,24 @@
             </objects>
             <point key="canvasLocation" x="22" y="-879"/>
         </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="fAP-Vv-zNu">
+            <objects>
+                <tabBarController storyboardIdentifier="PartialTabBarController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="KxF-HB-XHR" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="QVf-CS-fsJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="UsF-qY-Z8Y"/>
+                        <segue destination="Ex3-KG-rcq" kind="relationship" relationship="viewControllers" id="sk5-GQ-13g"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q5C-4K-QiM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1927" y="562"/>
+        </scene>
         <!--Bell Hop-->
         <scene sceneID="VB3-WN-T4h">
             <objects>
@@ -1325,8 +1343,31 @@
             </objects>
             <point key="canvasLocation" x="22" y="-2528"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="jOY-wq-EQ6">
+            <objects>
+                <viewController id="97D-0D-OeH" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fH1-gm-MJm"/>
+                        <viewControllerLayoutGuide type="bottom" id="Toy-5U-8yO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FAC-zd-qkj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.21176470820000001" green="0.22352941330000001" blue="0.31764706970000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AaA-CY-fzD" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2833" y="36"/>
+        </scene>
     </scenes>
     <resources>
         <image name="sortAscending" width="30" height="23"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Q8F-la-Cw2"/>
+        <segue reference="fxY-3t-saj"/>
+    </inferredMetricsTieBreakers>
 </document>
