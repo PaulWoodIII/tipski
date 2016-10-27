@@ -10,16 +10,17 @@ import Foundation
 import UIKit
 
 class UnlockableTabBar : UITabBarController {
-
+    
+    var allViewControllers : [UIViewController]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.createViewContollerList()
-        
+        allViewControllers = self.viewControllers
+        NotificationCenter.default.addObserver(self, selector: #selector(fullUnlockChanged), name: FullUnlockChangedNotification, object: nil)
+        self.updateViewControllerList()
     }
-    
 
-    func createViewContollerList(){
+    func updateViewControllerList(){
         
         //Helper Functions
         func topOrNavTop(vc :UIViewController ) -> UIViewController {
@@ -36,15 +37,24 @@ class UnlockableTabBar : UITabBarController {
                 vc.isKind(of: AboutViewController.self)
         }
         
-        
+        print("viewControllers count: \(viewControllers!.count), /n view controllers:  \(viewControllers!)" )
+        print ("Defaults for FullUnlock: \(UserDefaults.standard.bool(forKey: FullUnlock)) ")
         // If not unlocked remove the paid view controllers
-        if (true){
+        if !UserDefaults.standard.bool(forKey: FullUnlock) {
             //Build the free VCs
-            viewControllers = (self.viewControllers?.filter({ (inc) -> Bool in
+            viewControllers = (allViewControllers?.filter({ (inc) -> Bool in
                 return freeVC(inc)
             }))!
         }
-        
+        else {
+            viewControllers = allViewControllers
+        }
+        print("viewControllers count: \(viewControllers!.count), /n view controllers:  \(viewControllers!)" )
+    }
+
+    func fullUnlockChanged(note : Notification){
+        print(note.name.rawValue)
+        updateViewControllerList()
     }
     
 }
