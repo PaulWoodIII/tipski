@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class MoversViewController : ViewController {
+class MoversViewController : TipViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

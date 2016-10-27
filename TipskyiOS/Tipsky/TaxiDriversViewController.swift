@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class TaxiDriversViewController : ViewController {
+class TaxiDriversViewController : TipViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

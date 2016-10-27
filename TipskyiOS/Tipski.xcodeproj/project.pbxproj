@@ -18,6 +18,7 @@
 		DA0F8FB61DB7FD5100AF2791 /* WaitstaffViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0F8FB51DB7FD5100AF2791 /* WaitstaffViewController.swift */; };
 		DA0F8FB81DB8D96200AF2791 /* PurchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0F8FB71DB8D96200AF2791 /* PurchaseManager.swift */; };
 		DA0F8FBA1DB8E18100AF2791 /* SKProduct+LocalizedPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0F8FB91DB8E18100AF2791 /* SKProduct+LocalizedPrice.swift */; };
+		DA2C59E91DC253DA00E71DD6 /* Segues.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2C59E81DC253DA00E71DD6 /* Segues.swift */; };
 		DA3F73431DB65B310026A7BA /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA3F73411DB65B310026A7BA /* OpenSans-Regular.ttf */; };
 		DA3F73441DB65B310026A7BA /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA3F73421DB65B310026A7BA /* OpenSans-Semibold.ttf */; };
 		DA3F73771DB65D590026A7BA /* Datastore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F73761DB65D590026A7BA /* Datastore.swift */; };
@@ -28,7 +29,7 @@
 		DA7F5C331DB14F2F0070FE02 /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7F5C321DB14F2F0070FE02 /* Appearance.swift */; };
 		DA7F5C351DB14F950070FE02 /* TipskiIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7F5C341DB14F950070FE02 /* TipskiIcons.swift */; };
 		DA8B18491D87102000C529D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8B18481D87102000C529D7 /* AppDelegate.swift */; };
-		DA8B184B1D87102000C529D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8B184A1D87102000C529D7 /* ViewController.swift */; };
+		DA8B184B1D87102000C529D7 /* TipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8B184A1D87102000C529D7 /* TipViewController.swift */; };
 		DA8B184E1D87102000C529D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA8B184C1D87102000C529D7 /* Main.storyboard */; };
 		DA8B18531D87102000C529D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA8B18521D87102000C529D7 /* Assets.xcassets */; };
 		DA8B18561D87102000C529D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA8B18541D87102000C529D7 /* LaunchScreen.storyboard */; };
@@ -65,6 +66,7 @@
 		DA0F8FB51DB7FD5100AF2791 /* WaitstaffViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaitstaffViewController.swift; sourceTree = "<group>"; };
 		DA0F8FB71DB8D96200AF2791 /* PurchaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseManager.swift; sourceTree = "<group>"; };
 		DA0F8FB91DB8E18100AF2791 /* SKProduct+LocalizedPrice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKProduct+LocalizedPrice.swift"; sourceTree = "<group>"; };
+		DA2C59E81DC253DA00E71DD6 /* Segues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Segues.swift; sourceTree = "<group>"; };
 		DA3F73411DB65B310026A7BA /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		DA3F73421DB65B310026A7BA /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
 		DA3F73761DB65D590026A7BA /* Datastore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Datastore.swift; sourceTree = "<group>"; };
@@ -76,7 +78,7 @@
 		DA7F5C341DB14F950070FE02 /* TipskiIcons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipskiIcons.swift; sourceTree = "<group>"; };
 		DA8B18451D87102000C529D7 /* Tipski.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tipski.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA8B18481D87102000C529D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DA8B184A1D87102000C529D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DA8B184A1D87102000C529D7 /* TipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipViewController.swift; sourceTree = "<group>"; };
 		DA8B184D1D87102000C529D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DA8B18521D87102000C529D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA8B18551D87102000C529D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -148,7 +150,7 @@
 			children = (
 				DA3F73401DB65B310026A7BA /* Resources */,
 				DA8B18481D87102000C529D7 /* AppDelegate.swift */,
-				DA8B184A1D87102000C529D7 /* ViewController.swift */,
+				DA8B184A1D87102000C529D7 /* TipViewController.swift */,
 				DA4AFC2D1D89D369001F958A /* SettingsViewController.swift */,
 				DA73DDC31D8B19C400BBF37A /* AddEmojiViewController.swift */,
 				DA8B184C1D87102000C529D7 /* Main.storyboard */,
@@ -171,6 +173,7 @@
 				DA0F8FB31DB7F40600AF2791 /* BusDriversViewController.swift */,
 				DA0F8FB71DB8D96200AF2791 /* PurchaseManager.swift */,
 				DA0F8FB91DB8E18100AF2791 /* SKProduct+LocalizedPrice.swift */,
+				DA2C59E81DC253DA00E71DD6 /* Segues.swift */,
 			);
 			name = Tipski;
 			path = Tipsky;
@@ -344,10 +347,11 @@
 				DA7F5C331DB14F2F0070FE02 /* Appearance.swift in Sources */,
 				DA0F8FAA1DB7F3A700AF2791 /* BellHopViewController.swift in Sources */,
 				DA3F737B1DB6620C0026A7BA /* String+Utils.swift in Sources */,
-				DA8B184B1D87102000C529D7 /* ViewController.swift in Sources */,
+				DA8B184B1D87102000C529D7 /* TipViewController.swift in Sources */,
 				DA0F8FB61DB7FD5100AF2791 /* WaitstaffViewController.swift in Sources */,
 				DA8B18491D87102000C529D7 /* AppDelegate.swift in Sources */,
 				DA3F73771DB65D590026A7BA /* Datastore.swift in Sources */,
+				DA2C59E91DC253DA00E71DD6 /* Segues.swift in Sources */,
 				DA7F5C351DB14F950070FE02 /* TipskiIcons.swift in Sources */,
 				DA3F73791DB65D910026A7BA /* TipEmojis.swift in Sources */,
 				DA0F8FB41DB7F40600AF2791 /* BusDriversViewController.swift in Sources */,

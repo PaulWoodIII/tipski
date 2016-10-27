@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class BellHopViewController : ViewController {
+class BellHopViewController : TipViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

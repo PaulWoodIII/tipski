@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class BusDriversViewController : ViewController {
+class BusDriversViewController : TipViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
