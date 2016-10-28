@@ -48,7 +48,6 @@ class TipViewController: UIViewController {
         
     }
     
-    
     func prettyPrintMoney(_ value : Double) -> String {
         let num = NSNumber(value: value)
         return numberFormatter.string(from: num)!

@@ -14,7 +14,41 @@ final class Datastore {
     
     var tipEmojis : Array<TipEmoji>!
     var barTipEmojis : Array<TipEmoji>!
+    var taxiTipEmojis : Array<TipEmoji>!
     
+    init() {
+        
+        let paths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as String
+        let path = paths.stringByAppendingPathComponent(path: "tipEmoji.plist")
+        let _emojis = NSKeyedUnarchiver.unarchiveObject(withFile: path)
+        guard let emojis = _emojis as? [String:Array<TipEmoji>]!,
+            emojis != nil else {
+            tipEmojis = defaultList
+            barTipEmojis = defaultBartenderList
+            taxiTipEmojis = defaultTaxiList
+            return
+        }
+        tipEmojis = emojis["WaitStaff"]!
+        barTipEmojis = emojis["BarTender"]!
+        taxiTipEmojis = emojis["Taxi"]!
+    }
+
+    func persist(){
+        
+        let paths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as String
+        
+        let path = paths.stringByAppendingPathComponent(path: "tipEmoji.plist")
+        let composed : [String:Array<TipEmoji>] = [
+            "WaitStaff":tipEmojis,
+            "BarTender":barTipEmojis,
+            "Taxi":taxiTipEmojis
+        ]
+        if !NSKeyedArchiver.archiveRootObject(composed, toFile: path){
+            fatalError("Could Not persist")
+        }
+ 
+    }
+
     let defaultList : [TipEmoji]! = {
         
         return [
@@ -27,7 +61,7 @@ final class Datastore {
             TipEmoji(emoji:"😍",tipAmount:0.5)
         ]
     }()
-
+    
     let defaultBartenderList : [TipEmoji]! = {
         
         return [
@@ -41,34 +75,17 @@ final class Datastore {
         ]
     }()
     
-    init() {
+    let defaultTaxiList : [TipEmoji]! = {
         
-        let paths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as String
-        let path = paths.stringByAppendingPathComponent(path: "tipEmoji.plist")
-        let _emojis = NSKeyedUnarchiver.unarchiveObject(withFile: path)
-        guard let emojis = _emojis as? [String:Array<TipEmoji>]!,
-            emojis != nil else {
-            tipEmojis = defaultList
-            barTipEmojis = defaultBartenderList
-            return
-        }
-        tipEmojis = emojis["WaitStaff"]!
-        barTipEmojis = emojis["BarTender"]!
-    }
-
-    func persist(){
-        
-        let paths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as String
-        
-        let path = paths.stringByAppendingPathComponent(path: "tipEmoji.plist")
-        let composed : [String:Array<TipEmoji>] = [
-            "WaitStaff":tipEmojis,
-            "BarTender":barTipEmojis
+        return [
+            TipEmoji(emoji:"😷",tipAmount:0.0),
+            TipEmoji(emoji:"😭",tipAmount:0.01),
+            TipEmoji(emoji:"😕",tipAmount:0.08),
+            TipEmoji(emoji:"😶",tipAmount:0.12),
+            TipEmoji(emoji:"🙂",tipAmount:0.15),
+            TipEmoji(emoji:"😀",tipAmount:0.18),
+            TipEmoji(emoji:"😍",tipAmount:0.5)
         ]
-        if !NSKeyedArchiver.archiveRootObject(composed, toFile: path){
-            fatalError("Could Not persist")
-        }
- 
-    }
+    }()
     
 }
