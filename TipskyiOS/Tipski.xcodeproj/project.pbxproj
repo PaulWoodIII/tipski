@@ -22,6 +22,7 @@
 		DA18A3221DC39E1F008FE53D /* WeddingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA18A3211DC39E1F008FE53D /* WeddingViewController.swift */; };
 		DA18A3241DC3AE95008FE53D /* RestroomAttendant.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA18A3231DC3AE95008FE53D /* RestroomAttendant.swift */; };
 		DA18A3261DC3AEA4008FE53D /* TourGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA18A3251DC3AEA4008FE53D /* TourGuide.swift */; };
+		DA18A32A1DC3D846008FE53D /* Thanks.txt in Resources */ = {isa = PBXBuildFile; fileRef = DA18A3291DC3D846008FE53D /* Thanks.txt */; };
 		DA2C59E91DC253DA00E71DD6 /* StoryboardHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2C59E81DC253DA00E71DD6 /* StoryboardHelpers.swift */; };
 		DA3F73431DB65B310026A7BA /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA3F73411DB65B310026A7BA /* OpenSans-Regular.ttf */; };
 		DA3F73441DB65B310026A7BA /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA3F73421DB65B310026A7BA /* OpenSans-Semibold.ttf */; };
@@ -74,6 +75,7 @@
 		DA18A3211DC39E1F008FE53D /* WeddingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeddingViewController.swift; sourceTree = "<group>"; };
 		DA18A3231DC3AE95008FE53D /* RestroomAttendant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestroomAttendant.swift; sourceTree = "<group>"; };
 		DA18A3251DC3AEA4008FE53D /* TourGuide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TourGuide.swift; sourceTree = "<group>"; };
+		DA18A3291DC3D846008FE53D /* Thanks.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Thanks.txt; sourceTree = "<group>"; };
 		DA2C59E81DC253DA00E71DD6 /* StoryboardHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardHelpers.swift; sourceTree = "<group>"; };
 		DA3F73411DB65B310026A7BA /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		DA3F73421DB65B310026A7BA /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 			children = (
 				DA3F73411DB65B310026A7BA /* OpenSans-Regular.ttf */,
 				DA3F73421DB65B310026A7BA /* OpenSans-Semibold.ttf */,
+				DA18A3291DC3D846008FE53D /* Thanks.txt */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 				DA8B18561D87102000C529D7 /* LaunchScreen.storyboard in Resources */,
 				DA8B18531D87102000C529D7 /* Assets.xcassets in Resources */,
 				DA8B184E1D87102000C529D7 /* Main.storyboard in Resources */,
+				DA18A32A1DC3D846008FE53D /* Thanks.txt in Resources */,
 				DA3F73431DB65B310026A7BA /* OpenSans-Regular.ttf in Resources */,
 				DA3F73441DB65B310026A7BA /* OpenSans-Semibold.ttf in Resources */,
 			);

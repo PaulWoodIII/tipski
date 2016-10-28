@@ -179,7 +179,7 @@
                             <constraint firstItem="ZfW-ON-syt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="Xkf-xJ-PZL"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Resturant" id="yDM-Vb-xP7"/>
+                    <tabBarItem key="tabBarItem" title="Resturant" image="WaiterLined" selectedImage="WaiterFilled" id="yDM-Vb-xP7"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
                     <connections>
@@ -515,7 +515,7 @@
                             <constraint firstItem="3Zd-5x-RbB" firstAttribute="top" secondItem="rcy-Wj-6nb" secondAttribute="bottom" constant="20" id="xZV-bY-TPN"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Bell Hop" id="6A5-pQ-Vnn"/>
+                    <tabBarItem key="tabBarItem" title="Bell Hop" image="BellHopLined" selectedImage="BellHopFilled" id="6A5-pQ-Vnn"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
                     <connections>
@@ -800,7 +800,7 @@
                             <outlet property="delegate" destination="Vop-fT-l1P" id="uY2-qx-xg8"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="S5p-34-26A"/>
+                    <navigationItem key="navigationItem" title="Settings" id="S5p-34-26A"/>
                     <connections>
                         <outlet property="buyButton" destination="ueH-bJ-GcL" id="Mqn-ua-5d2"/>
                         <outlet property="debugCell" destination="gM6-K6-iXW" id="kjE-g8-FTn"/>
@@ -816,7 +816,7 @@
         <scene sceneID="4yf-rT-8V6">
             <objects>
                 <navigationController id="Ex3-KG-rcq" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Settings" id="FCq-Wn-oFq"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="SettingsLined" selectedImage="SettingsFIlled" id="FCq-Wn-oFq"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="sBy-9R-lEA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -988,7 +988,7 @@
                             <constraint firstAttribute="trailing" secondItem="ZSs-rz-eMH" secondAttribute="trailing" constant="30" id="oON-os-m41"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Taxi" id="Ljr-Xd-mhL"/>
+                    <tabBarItem key="tabBarItem" title="Taxi" image="TaxiLined" selectedImage="TaxiFilled" id="Ljr-Xd-mhL"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
                     <connections>
@@ -1133,7 +1133,7 @@
                             <constraint firstAttribute="trailing" secondItem="ZIQ-sg-iwn" secondAttribute="trailing" constant="30" id="q8a-Vy-Uut"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Maid" id="I8D-eB-EuR"/>
+                    <tabBarItem key="tabBarItem" title="Maid" image="MaidLined" selectedImage="MaidFilled" id="I8D-eB-EuR"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
                     <connections>
@@ -1296,7 +1296,7 @@
                             <constraint firstItem="anE-fq-0Ke" firstAttribute="top" secondItem="UfQ-N3-KoL" secondAttribute="bottom" constant="20" id="qvC-kj-9uc"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Bar Tender" id="qR0-l1-iUb"/>
+                    <tabBarItem key="tabBarItem" title="Bar Tender" image="BartenderLined" selectedImage="BartenderFilled" id="qR0-l1-iUb"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
                     <connections>
@@ -1481,6 +1481,18 @@
         </scene>
     </scenes>
     <resources>
+        <image name="BartenderFilled" width="30" height="30"/>
+        <image name="BartenderLined" width="30" height="30"/>
+        <image name="BellHopFilled" width="30" height="30"/>
+        <image name="BellHopLined" width="30" height="30"/>
+        <image name="MaidFilled" width="30" height="30"/>
+        <image name="MaidLined" width="30" height="30"/>
+        <image name="SettingsFIlled" width="30" height="30"/>
+        <image name="SettingsLined" width="30" height="30"/>
+        <image name="TaxiFilled" width="30" height="30"/>
+        <image name="TaxiLined" width="30" height="30"/>
+        <image name="WaiterFilled" width="30" height="30"/>
+        <image name="WaiterLined" width="30" height="30"/>
         <image name="sortAscending" width="30" height="23"/>
     </resources>
     <inferredMetricsTieBreakers>

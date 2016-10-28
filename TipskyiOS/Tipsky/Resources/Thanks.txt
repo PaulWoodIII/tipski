@@ -1,0 +1,12 @@
+Icons,
+
+* Waiter By Creative Stall
+* Taxi By Richard Wearn
+* Restroom By Curve
+* Bartender By Gan Khoon Lay
+* Housekeeper By Alexandre Mendes
+* Bellhop By Oliviu Stoian
+* Settings By Michal Beno
+
+Potential:
+* Tour Guide By Gan Khoon Lay
