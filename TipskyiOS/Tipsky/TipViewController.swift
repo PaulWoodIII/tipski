@@ -54,13 +54,22 @@ class TipViewController: UIViewController {
         return numberFormatter.string(from: num)!
     }
     
+    //Subclasses must call super
     func displayError(){
-
+        satisfactionLabel.text = "🤔"
     }
 
     @IBAction func settingsPressed() {
         self.performSegue(withIdentifier: Segues.settings.rawValue, sender: nil)
     }
     
+    // "😲😭😕😶🙂😀😍"
+    @IBAction func satisfactionSliderValueChanged(sender: AnyObject) {
+        updateViews()
+    }
+    
+    @IBAction func keyboardDonePressed(_ sender: AnyObject) {
+
+    }
 }
 

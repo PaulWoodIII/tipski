@@ -37,19 +37,13 @@ class WaitstaffViewController : TipViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    @IBAction func keyboardDonePressed(_ sender: AnyObject) {
-        amountTextField.resignFirstResponder()
-    }
     
-    // "😲😭😕😶🙂😀😍"
-    @IBAction func satisfactionSliderValueChanged(sender: AnyObject) {
-        
-        updateViews()
+    @IBAction override func keyboardDonePressed(_ sender: AnyObject) {
+        amountTextField.resignFirstResponder()
     }
     
     override func updateViews(){
         
-        displayTipLabels()
         let sat = Double(satisfactionSlider.value)
         
         let increment = 1.0 / Double(Datastore.shared.tipEmojis.count)
@@ -77,19 +71,9 @@ class WaitstaffViewController : TipViewController {
             displayError()
         }
     }
-    
-    func displayTipLabels (){
-        stackView.arrangedSubviews[3].isHidden = false;
-        stackView.arrangedSubviews[4].isHidden = false;
-    }
-    
-    func hideTipLabels(){
-        stackView.arrangedSubviews[3].isHidden = true;
-        stackView.arrangedSubviews[4].isHidden = true;
-    }
-    
+
     override func displayError(){
-        satisfactionLabel.text = "🤔"
+        super.displayError()
         tipLabel.text = "...?"
         totalLabel.text = "...?"
         //hideTipLabels()
