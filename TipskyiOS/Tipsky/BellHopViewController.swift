@@ -17,6 +17,16 @@ class BellHopViewController : TipViewController {
     
     @IBOutlet weak var stackView: UIStackView!
     
+    override var emojiList : Array<TipEmoji>! {
+        get {
+            return Datastore.shared.bellHopTipEmojis
+        }
+        set {
+            Datastore.shared.bellHopTipEmojis = newValue
+            Datastore.shared.persist()
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         Appearance.createInput(textField: bagsTextField)
@@ -71,6 +81,14 @@ class BellHopViewController : TipViewController {
     
     @IBAction func textFieldDidChange(_ sender: UITextField) {
         updateViews()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == Segues.settings.rawValue {
+            if let vc = segue.destination as? SettingsViewController {
+                vc.customerSatLevel = Datastore.shared.bellHopTipEmojis
+            }
+        }
     }
     
 }

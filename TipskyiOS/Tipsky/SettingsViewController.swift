@@ -8,14 +8,14 @@
 
 import UIKit
 
+protocol EmojiListDelegate : class {
+    func didFinish(withList tipList: Array<TipEmoji>)
+}
+
 class SettingsViewController: UITableViewController, UIPopoverControllerDelegate, AddEmojiDelegate {
 
     var customerSatLevel : Array<TipEmoji>!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        customerSatLevel = Datastore.shared.tipEmojis
-    }
+    weak var delegate : EmojiListDelegate?
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -23,6 +23,9 @@ class SettingsViewController: UITableViewController, UIPopoverControllerDelegate
     }
     
     @IBAction func donePressed(_ sender: AnyObject) {
+        if let delegate = delegate {
+            delegate.didFinish(withList: customerSatLevel)
+        }
         goBack()
     }
     
@@ -32,7 +35,6 @@ class SettingsViewController: UITableViewController, UIPopoverControllerDelegate
     
     func goBack(){
         //Something should happen here like updating the array
-        Datastore.shared.tipEmojis = customerSatLevel
         self.presentingViewController?.dismiss(animated: true, completion: nil)
     }
     
@@ -112,3 +114,4 @@ class SettingsViewController: UITableViewController, UIPopoverControllerDelegate
     }
     
 }
+

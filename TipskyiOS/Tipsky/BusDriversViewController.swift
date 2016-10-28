@@ -11,8 +11,4 @@ import UIKit
 
 class BusDriversViewController : TipViewController {
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
 }

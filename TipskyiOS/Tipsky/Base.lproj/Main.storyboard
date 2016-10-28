@@ -32,7 +32,6 @@
                         <segue destination="mrw-z9-uLq" kind="relationship" relationship="viewControllers" id="nwy-X4-Occ"/>
                         <segue destination="nOf-ok-xAI" kind="relationship" relationship="viewControllers" id="ADS-gT-y3N"/>
                         <segue destination="dTO-Qn-Tl1" kind="relationship" relationship="viewControllers" id="Gco-uE-1mU"/>
-                        <segue destination="uJx-De-yJ5" kind="relationship" relationship="viewControllers" id="bVi-Yn-3Ww"/>
                         <segue destination="Ex3-KG-rcq" kind="relationship" relationship="viewControllers" id="EWk-sr-Y7c"/>
                     </connections>
                 </tabBarController>
@@ -132,10 +131,10 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Og-dk-jQo">
-                                                <rect key="frame" x="0.0" y="273.5" width="275" height="44"/>
+                                                <rect key="frame" x="2" y="273.5" width="271" height="44"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hrS-xu-z2i">
-                                                        <rect key="frame" x="0.0" y="0.0" width="275" height="44"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="227" height="44"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="44" id="LHH-BZ-wHm"/>
@@ -143,7 +142,10 @@
                                                         </constraints>
                                                     </view>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K1D-EV-u4e">
-                                                        <rect key="frame" x="275" y="0.0" width="0.0" height="44"/>
+                                                        <rect key="frame" x="227" y="0.0" width="44" height="44"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="44" id="c2z-9A-dUj"/>
+                                                        </constraints>
                                                         <connections>
                                                             <action selector="settingsPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="xQE-t5-bL4"/>
                                                         </connections>
@@ -211,6 +213,7 @@
         <!--Navigation Controller-->
         <scene sceneID="f8b-N8-gUv">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qyV-5y-Tzo" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="ALc-fl-ogU" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="0ad-2I-X0g">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -220,13 +223,13 @@
                         <segue destination="u7D-39-wqQ" kind="relationship" relationship="rootViewController" id="Xf8-Dk-7OS"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qyV-5y-Tzo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="940" y="36"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="rfB-vK-vWu">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AL4-XH-DRx" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="u7D-39-wqQ" customClass="SettingsViewController" customModule="Tipski" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="49" sectionHeaderHeight="28" sectionFooterHeight="28" id="Owl-OF-jTr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -283,13 +286,13 @@
                         </rightBarButtonItems>
                     </navigationItem>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AL4-XH-DRx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1737" y="36"/>
         </scene>
         <!--Add Emoji View Controller-->
         <scene sceneID="tEK-qa-qnV">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UtK-zp-EA0" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="KbA-89-opk" customClass="AddEmojiViewController" customModule="Tipski" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OiR-dM-YZz"/>
@@ -395,7 +398,6 @@
                         <outlet property="tipTextField" destination="DVq-sG-fQM" id="NlQ-CS-roF"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UtK-zp-EA0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2545" y="36"/>
         </scene>
@@ -471,7 +473,7 @@
                                                 <rect key="frame" x="0.0" y="239.5" width="275" height="44"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zph-BZ-zEY">
-                                                        <rect key="frame" x="0.0" y="0.0" width="275" height="44"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="231" height="44"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" priority="250" constant="1000" id="j6k-wG-Dxk"/>
@@ -479,7 +481,10 @@
                                                         </constraints>
                                                     </view>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iaZ-d3-FpQ">
-                                                        <rect key="frame" x="275" y="0.0" width="0.0" height="44"/>
+                                                        <rect key="frame" x="231" y="0.0" width="44" height="44"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="44" id="4ht-4W-L0F"/>
+                                                        </constraints>
                                                         <connections>
                                                             <action selector="settingsPressed" destination="nOf-ok-xAI" eventType="touchUpInside" id="1e8-fW-YX4"/>
                                                         </connections>
@@ -521,6 +526,7 @@
                         <outlet property="satisfactionSlider" destination="z9L-WD-tG2" id="lYS-qK-HGQ"/>
                         <outlet property="stackView" destination="Ljo-rP-c7I" id="lAu-Td-rho"/>
                         <outlet property="tipLabel" destination="8on-BD-yyc" id="MtL-hk-mQg"/>
+                        <segue destination="ALc-fl-ogU" kind="presentation" identifier="showSettings" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="Avu-cI-7Fg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AX1-8G-Xbz" sceneMemberID="firstResponder"/>
@@ -936,7 +942,7 @@
                                                 <rect key="frame" x="0.0" y="273.5" width="275" height="44"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="esH-BW-0VS">
-                                                        <rect key="frame" x="0.0" y="0.0" width="275" height="44"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="231" height="44"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" priority="250" constant="1000" id="Z4V-ta-Xtn"/>
@@ -944,9 +950,13 @@
                                                         </constraints>
                                                     </view>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xNw-ae-gtL">
-                                                        <rect key="frame" x="275" y="0.0" width="0.0" height="44"/>
+                                                        <rect key="frame" x="231" y="0.0" width="44" height="44"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="44" id="CX1-Lz-G6P"/>
+                                                        </constraints>
                                                         <connections>
                                                             <action selector="settingsPressed" destination="mrw-z9-uLq" eventType="touchUpInside" id="PCo-4m-QoU"/>
+                                                            <segue destination="ALc-fl-ogU" kind="presentation" identifier="showSettings" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="4Nf-4j-H67"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -1080,7 +1090,7 @@
                                                 <rect key="frame" x="0.0" y="239.5" width="275" height="44"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Feq-wK-pXU">
-                                                        <rect key="frame" x="0.0" y="0.0" width="275" height="44"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="231" height="44"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" priority="250" constant="1000" id="fQ7-1L-G5D"/>
@@ -1088,9 +1098,13 @@
                                                         </constraints>
                                                     </view>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JyQ-tw-dTH">
-                                                        <rect key="frame" x="275" y="0.0" width="0.0" height="44"/>
+                                                        <rect key="frame" x="231" y="0.0" width="44" height="44"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="44" id="pNS-Nt-WbV"/>
+                                                        </constraints>
                                                         <connections>
                                                             <action selector="settingsPressed" destination="dTO-Qn-Tl1" eventType="touchUpInside" id="ti5-JK-YWc"/>
+                                                            <segue destination="ALc-fl-ogU" kind="presentation" identifier="showSettings" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="ptL-oS-nDM"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -1239,7 +1253,7 @@
                                                 <rect key="frame" x="0.0" y="239.5" width="275" height="44"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="81h-3w-jEa">
-                                                        <rect key="frame" x="0.0" y="0.0" width="275" height="44"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="231" height="44"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" priority="250" constant="1000" id="s7H-B5-Yp3"/>
@@ -1247,9 +1261,13 @@
                                                         </constraints>
                                                     </view>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="avr-wZ-Spn">
-                                                        <rect key="frame" x="275" y="0.0" width="0.0" height="44"/>
+                                                        <rect key="frame" x="231" y="0.0" width="44" height="44"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="44" id="2Cz-jo-AX3"/>
+                                                        </constraints>
                                                         <connections>
                                                             <action selector="settingsPressed" destination="roY-bN-Rnu" eventType="touchUpInside" id="mfx-d3-Nyr"/>
+                                                            <segue destination="ALc-fl-ogU" kind="presentation" identifier="showSettings" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="V4Y-YW-jGL"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -1396,7 +1414,7 @@
                                                 <rect key="frame" x="0.0" y="273.5" width="275" height="44"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zgb-Y2-WoG">
-                                                        <rect key="frame" x="0.0" y="0.0" width="275" height="44"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="231" height="44"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="44" id="aYJ-II-hsT"/>
@@ -1404,9 +1422,13 @@
                                                         </constraints>
                                                     </view>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cBY-dL-h1d">
-                                                        <rect key="frame" x="275" y="0.0" width="0.0" height="44"/>
+                                                        <rect key="frame" x="231" y="0.0" width="44" height="44"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="44" id="BYw-y7-Oz5"/>
+                                                        </constraints>
                                                         <connections>
                                                             <action selector="settingsPressed" destination="uJx-De-yJ5" eventType="touchUpInside" id="DG9-oX-IdT"/>
+                                                            <segue destination="ALc-fl-ogU" kind="presentation" identifier="showSettings" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="iUq-gr-3Gb"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -1464,5 +1486,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="BAm-Jv-l7i"/>
         <segue reference="EWk-sr-Y7c"/>
+        <segue reference="Avu-cI-7Fg"/>
     </inferredMetricsTieBreakers>
 </document>

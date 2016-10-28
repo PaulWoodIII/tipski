@@ -1,5 +1,5 @@
 //
-//  MoversViewController.swift
+//  TourGuide.swift
 //  Tipski
 //
 //  Created by Paul Wood on 10/28/16.
@@ -9,6 +9,6 @@
 import Foundation
 import UIKit
 
-class MoversViewController : TipViewController {
+class TourGuide : TipViewController {
     
 }

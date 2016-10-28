@@ -20,6 +20,15 @@ class TipViewController: UIViewController {
     
     @IBOutlet var doneToolbar: UIToolbar!
     
+    var emojiList : Array<TipEmoji>! {
+        get {
+            fatalError("Subclasses must override emojiList variable getter and setter")
+        }
+        set {
+            fatalError("Subclasses must override emojiList variable getter and setter")
+        }
+    }
+    
     let numberFormatter : NumberFormatter = {
         let f = NumberFormatter()
         f.numberStyle = .currency
@@ -70,5 +79,21 @@ class TipViewController: UIViewController {
     @IBAction func keyboardDonePressed(_ sender: AnyObject) {
 
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == Segues.settings.rawValue {
+            if let nav = segue.destination as? UINavigationController,
+                let vc = nav.topViewController as? SettingsViewController {
+                vc.customerSatLevel = self.emojiList
+                vc.delegate = self
+            }
+        }
+    }
 }
 
+extension TipViewController : EmojiListDelegate{
+    func didFinish(withList tipList: Array<TipEmoji>) {
+        self.emojiList = tipList
+        updateViews()
+    }
+}

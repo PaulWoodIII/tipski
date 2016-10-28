@@ -17,6 +17,16 @@ class MaidViewController : TipViewController {
         
     @IBOutlet weak var stackView: UIStackView!
     
+    override var emojiList : Array<TipEmoji>! {
+        get {
+            return Datastore.shared.maidTipEmojis
+        }
+        set {
+            Datastore.shared.maidTipEmojis = newValue
+            Datastore.shared.persist()
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         Appearance.createInput(textField: nightsTextField)

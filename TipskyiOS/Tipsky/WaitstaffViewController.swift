@@ -19,6 +19,16 @@ class WaitstaffViewController : TipViewController {
     
     @IBOutlet weak var stackView: UIStackView!
     
+    override var emojiList : Array<TipEmoji>! {
+        get {
+            return Datastore.shared.tipEmojis
+        }
+        set {
+            Datastore.shared.tipEmojis = newValue
+            Datastore.shared.persist()
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         Appearance.createInput(textField: amountTextField)
@@ -41,16 +51,16 @@ class WaitstaffViewController : TipViewController {
         
         let sat = Double(satisfactionSlider.value)
         
-        let increment = 1.0 / Double(Datastore.shared.tipEmojis.count)
+        let increment = 1.0 / Double(emojiList.count)
         var minBounds = 0.0
-        var foundSat : TipEmoji = Datastore.shared.tipEmojis[0]
+        var foundSat : TipEmoji = emojiList[0]
         
-        for i in 0..<Datastore.shared.tipEmojis.count {
+        for i in 0..<emojiList.count {
             if(minBounds > sat){
                 break
             }
             minBounds = minBounds + increment;
-            foundSat = Datastore.shared.tipEmojis[i]
+            foundSat = emojiList[i]
         }
         
         let satisfactionText = foundSat.emoji

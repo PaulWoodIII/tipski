@@ -15,6 +15,16 @@ class BartenderViewController : TipViewController {
     @IBOutlet weak var tipAmountKeyLabel: UILabel!
     @IBOutlet weak var tipAmountValueLabel: UILabel!
     
+    override var emojiList : Array<TipEmoji>! {
+        get {
+            return Datastore.shared.barTipEmojis
+        }
+        set {
+            Datastore.shared.barTipEmojis = newValue
+            Datastore.shared.persist()
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         Appearance.createInput(textField: drinkTextField)

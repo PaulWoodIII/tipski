@@ -20,6 +20,8 @@
 		DA18A31E1DC39CC3008FE53D /* MoversViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA18A31D1DC39CC3008FE53D /* MoversViewController.swift */; };
 		DA18A3201DC39D01008FE53D /* CosmetologyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA18A31F1DC39D01008FE53D /* CosmetologyViewController.swift */; };
 		DA18A3221DC39E1F008FE53D /* WeddingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA18A3211DC39E1F008FE53D /* WeddingViewController.swift */; };
+		DA18A3241DC3AE95008FE53D /* RestroomAttendant.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA18A3231DC3AE95008FE53D /* RestroomAttendant.swift */; };
+		DA18A3261DC3AEA4008FE53D /* TourGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA18A3251DC3AEA4008FE53D /* TourGuide.swift */; };
 		DA2C59E91DC253DA00E71DD6 /* StoryboardHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2C59E81DC253DA00E71DD6 /* StoryboardHelpers.swift */; };
 		DA3F73431DB65B310026A7BA /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA3F73411DB65B310026A7BA /* OpenSans-Regular.ttf */; };
 		DA3F73441DB65B310026A7BA /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA3F73421DB65B310026A7BA /* OpenSans-Semibold.ttf */; };
@@ -70,6 +72,8 @@
 		DA18A31D1DC39CC3008FE53D /* MoversViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoversViewController.swift; sourceTree = "<group>"; };
 		DA18A31F1DC39D01008FE53D /* CosmetologyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CosmetologyViewController.swift; sourceTree = "<group>"; };
 		DA18A3211DC39E1F008FE53D /* WeddingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeddingViewController.swift; sourceTree = "<group>"; };
+		DA18A3231DC3AE95008FE53D /* RestroomAttendant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestroomAttendant.swift; sourceTree = "<group>"; };
+		DA18A3251DC3AEA4008FE53D /* TourGuide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TourGuide.swift; sourceTree = "<group>"; };
 		DA2C59E81DC253DA00E71DD6 /* StoryboardHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardHelpers.swift; sourceTree = "<group>"; };
 		DA3F73411DB65B310026A7BA /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		DA3F73421DB65B310026A7BA /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
@@ -180,6 +184,8 @@
 				DA18A31D1DC39CC3008FE53D /* MoversViewController.swift */,
 				DA18A31F1DC39D01008FE53D /* CosmetologyViewController.swift */,
 				DA18A3211DC39E1F008FE53D /* WeddingViewController.swift */,
+				DA18A3231DC3AE95008FE53D /* RestroomAttendant.swift */,
+				DA18A3251DC3AEA4008FE53D /* TourGuide.swift */,
 			);
 			name = Tipski;
 			path = Tipsky;
@@ -347,6 +353,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA18A3241DC3AE95008FE53D /* RestroomAttendant.swift in Sources */,
 				DA73DDC41D8B19C400BBF37A /* AddEmojiViewController.swift in Sources */,
 				DA0F8FBA1DB8E18100AF2791 /* SKProduct+LocalizedPrice.swift in Sources */,
 				DA7F5C331DB14F2F0070FE02 /* Appearance.swift in Sources */,
@@ -357,6 +364,7 @@
 				DA8B18491D87102000C529D7 /* AppDelegate.swift in Sources */,
 				DA3F73771DB65D590026A7BA /* Datastore.swift in Sources */,
 				DA2C59E91DC253DA00E71DD6 /* StoryboardHelpers.swift in Sources */,
+				DA18A3261DC3AEA4008FE53D /* TourGuide.swift in Sources */,
 				DA7F5C351DB14F950070FE02 /* TipskiIcons.swift in Sources */,
 				DA18A31C1DC39CB5008FE53D /* ValetViewController.swift in Sources */,
 				DA18A31E1DC39CC3008FE53D /* MoversViewController.swift in Sources */,
