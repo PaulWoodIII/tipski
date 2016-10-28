@@ -10,6 +10,12 @@ import UIKit
 
 class TipViewController: UIViewController {
     
+    /* The Core Components of all Tip Views is the Satisfction Label and Slider. 
+       These two UIComponenets should be front and center on all subclass's views
+     */
+    @IBOutlet weak var satisfactionLabel: UILabel!
+    @IBOutlet weak var satisfactionSlider: UISlider!
+
     @IBOutlet weak var containerView: UIView!
     
     @IBOutlet var doneToolbar: UIToolbar!

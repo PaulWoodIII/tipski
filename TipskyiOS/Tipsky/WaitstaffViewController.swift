@@ -13,10 +13,6 @@ class WaitstaffViewController : TipViewController {
     
     @IBOutlet weak var amountTextField: UITextField!
     
-    @IBOutlet weak var satisfactionLabel: UILabel!
-    
-    @IBOutlet weak var satisfactionSlider: UISlider!
-    
     @IBOutlet weak var tipLabel: UILabel!
     
     @IBOutlet weak var totalLabel: UILabel!
