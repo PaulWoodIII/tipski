@@ -15,6 +15,7 @@ final class Datastore {
     var tipEmojis : Array<TipEmoji>!
     var barTipEmojis : Array<TipEmoji>!
     var taxiTipEmojis : Array<TipEmoji>!
+    var maidTipEmojis : Array<TipEmoji>!
     
     init() {
         
@@ -26,11 +27,13 @@ final class Datastore {
             tipEmojis = defaultList
             barTipEmojis = defaultBartenderList
             taxiTipEmojis = defaultTaxiList
+            maidTipEmojis = defaultMaidList
             return
         }
         tipEmojis = emojis["WaitStaff"]!
         barTipEmojis = emojis["BarTender"]!
         taxiTipEmojis = emojis["Taxi"]!
+        maidTipEmojis = emojis["Maid"]!
     }
 
     func persist(){
@@ -41,7 +44,8 @@ final class Datastore {
         let composed : [String:Array<TipEmoji>] = [
             "WaitStaff":tipEmojis,
             "BarTender":barTipEmojis,
-            "Taxi":taxiTipEmojis
+            "Taxi":taxiTipEmojis,
+            "Maid":maidTipEmojis
         ]
         if !NSKeyedArchiver.archiveRootObject(composed, toFile: path){
             fatalError("Could Not persist")
@@ -85,6 +89,19 @@ final class Datastore {
             TipEmoji(emoji:"🙂",tipAmount:0.15),
             TipEmoji(emoji:"😀",tipAmount:0.18),
             TipEmoji(emoji:"😍",tipAmount:0.5)
+        ]
+    }()
+    
+    let defaultMaidList : [TipEmoji]! = {
+        
+        return [
+            TipEmoji(emoji:"😷",tipAmount:0.0),
+            TipEmoji(emoji:"😭",tipAmount:0.25),
+            TipEmoji(emoji:"😕",tipAmount:0.50),
+            TipEmoji(emoji:"😶",tipAmount:1.0),
+            TipEmoji(emoji:"🙂",tipAmount:1.5),
+            TipEmoji(emoji:"😀",tipAmount:2.0),
+            TipEmoji(emoji:"😍",tipAmount:3.0)
         ]
     }()
     
