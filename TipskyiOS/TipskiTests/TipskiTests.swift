@@ -1,15 +1,15 @@
 //
-//  TipskyTests.swift
-//  TipskyTests
+//  TipskiTests.swift
+//  TipskiTests
 //
 //  Created by Paul Wood on 9/12/16.
 //  Copyright © 2016 Paul Wood. All rights reserved.
 //
 
 import XCTest
-@testable import Tipsky
+@testable import Tipski
 
-class TipskyTests: XCTestCase {
+class TipskiTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

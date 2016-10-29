@@ -23,6 +23,9 @@
 		DA18A3241DC3AE95008FE53D /* RestroomAttendant.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA18A3231DC3AE95008FE53D /* RestroomAttendant.swift */; };
 		DA18A3261DC3AEA4008FE53D /* TourGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA18A3251DC3AEA4008FE53D /* TourGuide.swift */; };
 		DA18A32A1DC3D846008FE53D /* Thanks.txt in Resources */ = {isa = PBXBuildFile; fileRef = DA18A3291DC3D846008FE53D /* Thanks.txt */; };
+		DA255F7F1DC4F35E002E52F5 /* EmojiCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA255F7E1DC4F35E002E52F5 /* EmojiCollectionView.swift */; };
+		DA255F811DC4F3D8002E52F5 /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA255F801DC4F3D8002E52F5 /* Emoji.swift */; };
+		DA255F831DC4F475002E52F5 /* emojis.json in Resources */ = {isa = PBXBuildFile; fileRef = DA255F821DC4F475002E52F5 /* emojis.json */; };
 		DA2C59E91DC253DA00E71DD6 /* StoryboardHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2C59E81DC253DA00E71DD6 /* StoryboardHelpers.swift */; };
 		DA3F73431DB65B310026A7BA /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA3F73411DB65B310026A7BA /* OpenSans-Regular.ttf */; };
 		DA3F73441DB65B310026A7BA /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA3F73421DB65B310026A7BA /* OpenSans-Semibold.ttf */; };
@@ -76,6 +79,9 @@
 		DA18A3231DC3AE95008FE53D /* RestroomAttendant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestroomAttendant.swift; sourceTree = "<group>"; };
 		DA18A3251DC3AEA4008FE53D /* TourGuide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TourGuide.swift; sourceTree = "<group>"; };
 		DA18A3291DC3D846008FE53D /* Thanks.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Thanks.txt; sourceTree = "<group>"; };
+		DA255F7E1DC4F35E002E52F5 /* EmojiCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiCollectionView.swift; sourceTree = "<group>"; };
+		DA255F801DC4F3D8002E52F5 /* Emoji.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
+		DA255F821DC4F475002E52F5 /* emojis.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = emojis.json; sourceTree = "<group>"; };
 		DA2C59E81DC253DA00E71DD6 /* StoryboardHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardHelpers.swift; sourceTree = "<group>"; };
 		DA3F73411DB65B310026A7BA /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		DA3F73421DB65B310026A7BA /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
@@ -131,6 +137,7 @@
 			children = (
 				DA3F73411DB65B310026A7BA /* OpenSans-Regular.ttf */,
 				DA3F73421DB65B310026A7BA /* OpenSans-Semibold.ttf */,
+				DA255F821DC4F475002E52F5 /* emojis.json */,
 				DA18A3291DC3D846008FE53D /* Thanks.txt */,
 			);
 			path = Resources;
@@ -189,8 +196,9 @@
 				DA18A3211DC39E1F008FE53D /* WeddingViewController.swift */,
 				DA18A3231DC3AE95008FE53D /* RestroomAttendant.swift */,
 				DA18A3251DC3AEA4008FE53D /* TourGuide.swift */,
+				DA255F7E1DC4F35E002E52F5 /* EmojiCollectionView.swift */,
+				DA255F801DC4F3D8002E52F5 /* Emoji.swift */,
 			);
-			name = Tipski;
 			path = Tipski;
 			sourceTree = "<group>";
 		};
@@ -200,7 +208,6 @@
 				DA8B18601D87102000C529D7 /* TipskiTests.swift */,
 				DA8B18621D87102000C529D7 /* Info.plist */,
 			);
-			name = TipskiTests;
 			path = TipskiTests;
 			sourceTree = "<group>";
 		};
@@ -210,7 +217,6 @@
 				DA8B186B1D87102000C529D7 /* TipskiUITests.swift */,
 				DA8B186D1D87102000C529D7 /* Info.plist */,
 			);
-			name = TipskiUITests;
 			path = TipskiUITests;
 			sourceTree = "<group>";
 		};
@@ -327,6 +333,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA255F831DC4F475002E52F5 /* emojis.json in Resources */,
 				DA8B18561D87102000C529D7 /* LaunchScreen.storyboard in Resources */,
 				DA8B18531D87102000C529D7 /* Assets.xcassets in Resources */,
 				DA8B184E1D87102000C529D7 /* Main.storyboard in Resources */,
@@ -360,6 +367,7 @@
 				DA18A3241DC3AE95008FE53D /* RestroomAttendant.swift in Sources */,
 				DA73DDC41D8B19C400BBF37A /* AddEmojiViewController.swift in Sources */,
 				DA0F8FBA1DB8E18100AF2791 /* SKProduct+LocalizedPrice.swift in Sources */,
+				DA255F7F1DC4F35E002E52F5 /* EmojiCollectionView.swift in Sources */,
 				DA7F5C331DB14F2F0070FE02 /* Appearance.swift in Sources */,
 				DA0F8FAA1DB7F3A700AF2791 /* BellHopViewController.swift in Sources */,
 				DA3F737B1DB6620C0026A7BA /* String+Utils.swift in Sources */,
@@ -368,6 +376,7 @@
 				DA8B18491D87102000C529D7 /* AppDelegate.swift in Sources */,
 				DA3F73771DB65D590026A7BA /* Datastore.swift in Sources */,
 				DA2C59E91DC253DA00E71DD6 /* StoryboardHelpers.swift in Sources */,
+				DA255F811DC4F3D8002E52F5 /* Emoji.swift in Sources */,
 				DA18A3261DC3AEA4008FE53D /* TourGuide.swift in Sources */,
 				DA7F5C351DB14F950070FE02 /* TipskiIcons.swift in Sources */,
 				DA18A31C1DC39CB5008FE53D /* ValetViewController.swift in Sources */,
