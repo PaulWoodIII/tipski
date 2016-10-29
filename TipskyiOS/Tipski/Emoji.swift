@@ -27,7 +27,7 @@ class Emoji {
         fts = composing
     }
     
-    let allEmojis : [Emoji] = {
+    static let allEmojis : [Emoji] = {
         let url = Bundle.main.url(forResource: "emojis", withExtension: "json")
         let data = try! Data(contentsOf: url!)
         let json = try! JSONSerialization.jsonObject(with: data, options: .allowFragments)
@@ -46,6 +46,16 @@ extension Emoji : CustomStringConvertible {
     public var description: String {
         get {
             return "\(title): \(char)"
+        }
+    }
+}
+
+extension String {
+    public var isEmoji : Bool {
+        get {
+            return Emoji.allEmojis.contains(where: { (e) -> Bool in
+                return e.char == self
+            })
         }
     }
 }
