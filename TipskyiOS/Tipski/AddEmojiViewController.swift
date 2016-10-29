@@ -1,6 +1,6 @@
 //
 //  AddEmojiViewController.swift
-//  Tipsky
+//  Tipski
 //
 //  Created by Paul Wood on 9/15/16.
 //  Copyright © 2016 Paul Wood. All rights reserved.

@@ -38,8 +38,8 @@
 		DA8B184E1D87102000C529D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA8B184C1D87102000C529D7 /* Main.storyboard */; };
 		DA8B18531D87102000C529D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA8B18521D87102000C529D7 /* Assets.xcassets */; };
 		DA8B18561D87102000C529D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA8B18541D87102000C529D7 /* LaunchScreen.storyboard */; };
-		DA8B18611D87102000C529D7 /* TipskyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8B18601D87102000C529D7 /* TipskyTests.swift */; };
-		DA8B186C1D87102000C529D7 /* TipskyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8B186B1D87102000C529D7 /* TipskyUITests.swift */; };
+		DA8B18611D87102000C529D7 /* TipskiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8B18601D87102000C529D7 /* TipskiTests.swift */; };
+		DA8B186C1D87102000C529D7 /* TipskiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8B186B1D87102000C529D7 /* TipskiUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,14 +48,14 @@
 			containerPortal = DA8B183D1D87102000C529D7 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = DA8B18441D87102000C529D7;
-			remoteInfo = Tipsky;
+			remoteInfo = Tipski;
 		};
 		DA8B18681D87102000C529D7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DA8B183D1D87102000C529D7 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = DA8B18441D87102000C529D7;
-			remoteInfo = Tipsky;
+			remoteInfo = Tipski;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -94,10 +94,10 @@
 		DA8B18551D87102000C529D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA8B18571D87102000C529D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA8B185C1D87102000C529D7 /* TipskiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipskiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA8B18601D87102000C529D7 /* TipskyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipskyTests.swift; sourceTree = "<group>"; };
+		DA8B18601D87102000C529D7 /* TipskiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipskiTests.swift; sourceTree = "<group>"; };
 		DA8B18621D87102000C529D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA8B18671D87102000C529D7 /* TipskiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipskiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA8B186B1D87102000C529D7 /* TipskyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipskyUITests.swift; sourceTree = "<group>"; };
+		DA8B186B1D87102000C529D7 /* TipskiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipskiUITests.swift; sourceTree = "<group>"; };
 		DA8B186D1D87102000C529D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -191,27 +191,27 @@
 				DA18A3251DC3AEA4008FE53D /* TourGuide.swift */,
 			);
 			name = Tipski;
-			path = Tipsky;
+			path = Tipski;
 			sourceTree = "<group>";
 		};
 		DA8B185F1D87102000C529D7 /* TipskiTests */ = {
 			isa = PBXGroup;
 			children = (
-				DA8B18601D87102000C529D7 /* TipskyTests.swift */,
+				DA8B18601D87102000C529D7 /* TipskiTests.swift */,
 				DA8B18621D87102000C529D7 /* Info.plist */,
 			);
 			name = TipskiTests;
-			path = TipskyTests;
+			path = TipskiTests;
 			sourceTree = "<group>";
 		};
 		DA8B186A1D87102000C529D7 /* TipskiUITests */ = {
 			isa = PBXGroup;
 			children = (
-				DA8B186B1D87102000C529D7 /* TipskyUITests.swift */,
+				DA8B186B1D87102000C529D7 /* TipskiUITests.swift */,
 				DA8B186D1D87102000C529D7 /* Info.plist */,
 			);
 			name = TipskiUITests;
-			path = TipskyUITests;
+			path = TipskiUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,7 +230,7 @@
 			dependencies = (
 			);
 			name = Tipski;
-			productName = Tipsky;
+			productName = Tipski;
 			productReference = DA8B18451D87102000C529D7 /* Tipski.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -248,7 +248,7 @@
 				DA8B185E1D87102000C529D7 /* PBXTargetDependency */,
 			);
 			name = TipskiTests;
-			productName = TipskyTests;
+			productName = TipskiTests;
 			productReference = DA8B185C1D87102000C529D7 /* TipskiTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
@@ -266,7 +266,7 @@
 				DA8B18691D87102000C529D7 /* PBXTargetDependency */,
 			);
 			name = TipskiUITests;
-			productName = TipskyUITests;
+			productName = TipskiUITests;
 			productReference = DA8B18671D87102000C529D7 /* TipskiUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
@@ -389,7 +389,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA8B18611D87102000C529D7 /* TipskyTests.swift in Sources */,
+				DA8B18611D87102000C529D7 /* TipskiTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,7 +397,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA8B186C1D87102000C529D7 /* TipskyUITests.swift in Sources */,
+				DA8B186C1D87102000C529D7 /* TipskiUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,7 +530,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BDB4XSJTE3;
-				INFOPLIST_FILE = Tipsky/Info.plist;
+				INFOPLIST_FILE = Tipski/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.paulwoodiii.tipski;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -543,7 +543,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BDB4XSJTE3;
-				INFOPLIST_FILE = Tipsky/Info.plist;
+				INFOPLIST_FILE = Tipski/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.paulwoodiii.tipski;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -555,9 +555,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = TipskyTests/Info.plist;
+				INFOPLIST_FILE = TipskiTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.paulwoodiii.TipskyTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.paulwoodiii.TipskiTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tipski.app/Tipski";
@@ -568,9 +568,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = TipskyTests/Info.plist;
+				INFOPLIST_FILE = TipskiTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.paulwoodiii.TipskyTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.paulwoodiii.TipskiTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tipski.app/Tipski";
@@ -580,24 +580,24 @@
 		DA8B18771D87102000C529D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = TipskyUITests/Info.plist;
+				INFOPLIST_FILE = TipskiUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.paulwoodiii.TipskyUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.paulwoodiii.TipskiUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = Tipsky;
+				TEST_TARGET_NAME = Tipski;
 			};
 			name = Debug;
 		};
 		DA8B18781D87102000C529D7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = TipskyUITests/Info.plist;
+				INFOPLIST_FILE = TipskiUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.paulwoodiii.TipskyUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.paulwoodiii.TipskiUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = Tipsky;
+				TEST_TARGET_NAME = Tipski;
 			};
 			name = Release;
 		};
