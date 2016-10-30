@@ -34,4 +34,8 @@ class TipEmoji: NSObject, NSCoding {
         self.emoji = emoji
     }
     
+    func isValid() -> Bool {
+        return self.emoji.isEmoji
+    }
+    
 }

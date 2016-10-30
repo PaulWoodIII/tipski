@@ -69,7 +69,12 @@ class AddEmojiViewController : UIViewController, UICollectionViewDataSource, UIC
     }
 
     @IBAction func addButtonPressed(_ sender: AnyObject) {
-        delegate?.didAddEmoji(tipEmoji: newItem)
+        if newItem.isValid() {
+            delegate?.didAddEmoji(tipEmoji: newItem)
+        }
+        else {
+            //Display Error
+        }
     }
     
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -111,8 +116,13 @@ class AddEmojiViewController : UIViewController, UICollectionViewDataSource, UIC
     
     public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath){
         let char = filteredEmojis[indexPath.row].char
-        emojiTextField.text = char
-        newItem.emoji = char
+        if char.isEmoji {
+            emojiTextField.text = char
+            newItem.emoji = char
+        }
+        else {
+            //display error in emoji text field
+        }
         emojiTextField.resignFirstResponder()
     }
     

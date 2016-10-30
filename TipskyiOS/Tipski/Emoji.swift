@@ -5,6 +5,9 @@
 //  Created by Paul Wood on 10/29/16.
 //  Copyright © 2016 Paul Wood. All rights reserved.
 //
+// Assumes you have a file named emojis.json as a resource
+// That file can be found here: https://github.com/muan/emoji/blob/gh-pages/javascripts/emojilib/emojis.json
+// Thanks so much to the contributors of emojilib!
 
 import Foundation
 
