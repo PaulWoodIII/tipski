@@ -25,7 +25,6 @@
 		DA18A32A1DC3D846008FE53D /* Thanks.txt in Resources */ = {isa = PBXBuildFile; fileRef = DA18A3291DC3D846008FE53D /* Thanks.txt */; };
 		DA255F7F1DC4F35E002E52F5 /* EmojiCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA255F7E1DC4F35E002E52F5 /* EmojiCollectionView.swift */; };
 		DA255F811DC4F3D8002E52F5 /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA255F801DC4F3D8002E52F5 /* Emoji.swift */; };
-		DA255F831DC4F475002E52F5 /* emojis.json in Resources */ = {isa = PBXBuildFile; fileRef = DA255F821DC4F475002E52F5 /* emojis.json */; };
 		DA2C59E91DC253DA00E71DD6 /* StoryboardHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2C59E81DC253DA00E71DD6 /* StoryboardHelpers.swift */; };
 		DA3F73431DB65B310026A7BA /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA3F73411DB65B310026A7BA /* OpenSans-Regular.ttf */; };
 		DA3F73441DB65B310026A7BA /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA3F73421DB65B310026A7BA /* OpenSans-Semibold.ttf */; };
@@ -43,6 +42,7 @@
 		DA8B18561D87102000C529D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA8B18541D87102000C529D7 /* LaunchScreen.storyboard */; };
 		DA8B18611D87102000C529D7 /* TipskiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8B18601D87102000C529D7 /* TipskiTests.swift */; };
 		DA8B186C1D87102000C529D7 /* TipskiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8B186B1D87102000C529D7 /* TipskiUITests.swift */; };
+		DA9957691DC91BC400C46FAA /* emojis.json in Resources */ = {isa = PBXBuildFile; fileRef = DA99576B1DC91BC400C46FAA /* emojis.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,7 +81,6 @@
 		DA18A3291DC3D846008FE53D /* Thanks.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Thanks.txt; sourceTree = "<group>"; };
 		DA255F7E1DC4F35E002E52F5 /* EmojiCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiCollectionView.swift; sourceTree = "<group>"; };
 		DA255F801DC4F3D8002E52F5 /* Emoji.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
-		DA255F821DC4F475002E52F5 /* emojis.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = emojis.json; sourceTree = "<group>"; };
 		DA2C59E81DC253DA00E71DD6 /* StoryboardHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardHelpers.swift; sourceTree = "<group>"; };
 		DA3F73411DB65B310026A7BA /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		DA3F73421DB65B310026A7BA /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
@@ -105,6 +104,14 @@
 		DA8B18671D87102000C529D7 /* TipskiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipskiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA8B186B1D87102000C529D7 /* TipskiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipskiUITests.swift; sourceTree = "<group>"; };
 		DA8B186D1D87102000C529D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA99576A1DC91BC400C46FAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = Base; path = Base.lproj/emojis.json; sourceTree = "<group>"; };
+		DA99576C1DC91BC900C46FAA /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = ru; path = ru.lproj/emojis.json; sourceTree = "<group>"; };
+		DAEBCBC81DC90312003BEF03 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		DAEBCBC91DC90312003BEF03 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		DAEBCBCB1DC91654003BEF03 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		DAEBCBCD1DC91658003BEF03 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		DAEBCBCE1DC918A9003BEF03 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		DAEBCBCF1DC918A9003BEF03 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,7 +144,7 @@
 			children = (
 				DA3F73411DB65B310026A7BA /* OpenSans-Regular.ttf */,
 				DA3F73421DB65B310026A7BA /* OpenSans-Semibold.ttf */,
-				DA255F821DC4F475002E52F5 /* emojis.json */,
+				DA99576B1DC91BC400C46FAA /* emojis.json */,
 				DA18A3291DC3D846008FE53D /* Thanks.txt */,
 			);
 			path = Resources;
@@ -315,6 +322,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = DA8B183C1D87102000C529D7;
 			productRefGroup = DA8B18461D87102000C529D7 /* Products */;
@@ -333,7 +341,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA255F831DC4F475002E52F5 /* emojis.json in Resources */,
+				DA9957691DC91BC400C46FAA /* emojis.json in Resources */,
 				DA8B18561D87102000C529D7 /* LaunchScreen.storyboard in Resources */,
 				DA8B18531D87102000C529D7 /* Assets.xcassets in Resources */,
 				DA8B184E1D87102000C529D7 /* Main.storyboard in Resources */,
@@ -430,6 +438,9 @@
 			isa = PBXVariantGroup;
 			children = (
 				DA8B184D1D87102000C529D7 /* Base */,
+				DAEBCBC81DC90312003BEF03 /* zh-Hans */,
+				DAEBCBCB1DC91654003BEF03 /* en */,
+				DAEBCBCE1DC918A9003BEF03 /* ru */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -438,8 +449,20 @@
 			isa = PBXVariantGroup;
 			children = (
 				DA8B18551D87102000C529D7 /* Base */,
+				DAEBCBC91DC90312003BEF03 /* zh-Hans */,
+				DAEBCBCD1DC91658003BEF03 /* en */,
+				DAEBCBCF1DC918A9003BEF03 /* ru */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		DA99576B1DC91BC400C46FAA /* emojis.json */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA99576A1DC91BC400C46FAA /* Base */,
+				DA99576C1DC91BC900C46FAA /* ru */,
+			);
+			name = emojis.json;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -449,6 +472,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -497,6 +521,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";

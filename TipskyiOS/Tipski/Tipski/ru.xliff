@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="Tipski/Base.lproj/LaunchScreen.storyboard" source-language="en" datatype="plaintext" target-language="ru">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.1" build-num="8B62"/>
+    </header>
+    <body/>
+  </file>
+  <file original="Tipski/Base.lproj/Main.storyboard" source-language="en" datatype="plaintext" target-language="ru">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.1" build-num="8B62"/>
+    </header>
+    <body>
+      <trans-unit id="1LK-Hh-sZQ.text">
+        <source>Title</source>
+        <target>Title</target>
+        <note>Class = "UILabel"; text = "Title"; ObjectID = "1LK-Hh-sZQ";</note>
+      </trans-unit>
+      <trans-unit id="6A5-pQ-Vnn.title">
+        <source>Bell Hop</source>
+        <target>Bell Hop</target>
+        <note>Class = "UITabBarItem"; title = "Bell Hop"; ObjectID = "6A5-pQ-Vnn";</note>
+      </trans-unit>
+      <trans-unit id="6Uf-Yg-ztL.text">
+        <source>😶</source>
+        <target>😶</target>
+        <note>Class = "UILabel"; text = "😶"; ObjectID = "6Uf-Yg-ztL";</note>
+      </trans-unit>
+      <trans-unit id="8on-BD-yyc.text">
+        <source>Label</source>
+        <target>Label</target>
+        <note>Class = "UILabel"; text = "Label"; ObjectID = "8on-BD-yyc";</note>
+      </trans-unit>
+      <trans-unit id="8rq-Ux-A68.text">
+        <source>😶</source>
+        <target>😶</target>
+        <note>Class = "UILabel"; text = "😶"; ObjectID = "8rq-Ux-A68";</note>
+      </trans-unit>
+      <trans-unit id="9Bq-Vy-I2X.placeholder">
+        <source>On Meter</source>
+        <target>On Meter</target>
+        <note>Class = "UITextField"; placeholder = "On Meter"; ObjectID = "9Bq-Vy-I2X";</note>
+      </trans-unit>
+      <trans-unit id="51z-gU-j2R.text">
+        <source>Tip: </source>
+        <target>Tip: </target>
+        <note>Class = "UILabel"; text = "Tip: "; ObjectID = "51z-gU-j2R";</note>
+      </trans-unit>
+      <trans-unit id="AdH-31-www.text">
+        <source>Total: </source>
+        <target>Total: </target>
+        <note>Class = "UILabel"; text = "Total: "; ObjectID = "AdH-31-www";</note>
+      </trans-unit>
+      <trans-unit id="AgX-Jh-ZHY.text">
+        <source>Label</source>
+        <target>Label</target>
+        <note>Class = "UILabel"; text = "Label"; ObjectID = "AgX-Jh-ZHY";</note>
+      </trans-unit>
+      <trans-unit id="Al0-Gx-Epr.normalTitle">
+        <source>Submit</source>
+        <target>Submit</target>
+        <note>Class = "UIButton"; normalTitle = "Submit"; ObjectID = "Al0-Gx-Epr";</note>
+      </trans-unit>
+      <trans-unit id="C81-Vb-aZx.text">
+        <source>Full Unlock</source>
+        <target>Full Unlock</target>
+        <note>Class = "UILabel"; text = "Full Unlock"; ObjectID = "C81-Vb-aZx";</note>
+      </trans-unit>
+      <trans-unit id="DVg-eD-5ip.text">
+        <source>😶</source>
+        <target>😶</target>
+        <note>Class = "UILabel"; text = "😶"; ObjectID = "DVg-eD-5ip";</note>
+      </trans-unit>
+      <trans-unit id="DVq-sG-fQM.placeholder">
+        <source>Tip Percentage</source>
+        <target>Tip Percentage</target>
+        <note>Class = "UITextField"; placeholder = "Tip Percentage"; ObjectID = "DVq-sG-fQM";</note>
+      </trans-unit>
+      <trans-unit id="Ejz-w9-qmG.text">
+        <source>Beta Testers</source>
+        <target>Beta Testers</target>
+        <note>Class = "UILabel"; text = "Beta Testers"; ObjectID = "Ejz-w9-qmG";</note>
+      </trans-unit>
+      <trans-unit id="FCq-Wn-oFq.title">
+        <source>Settings</source>
+        <target>Settings</target>
+        <note>Class = "UITabBarItem"; title = "Settings"; ObjectID = "FCq-Wn-oFq";</note>
+      </trans-unit>
+      <trans-unit id="Fex-Zy-wKB.text">
+        <source>😀</source>
+        <target>😀</target>
+        <note>Class = "UILabel"; text = "😀"; ObjectID = "Fex-Zy-wKB";</note>
+      </trans-unit>
+      <trans-unit id="G61-Ar-WzM.text">
+        <source>Tip: </source>
+        <target>Tip: </target>
+        <note>Class = "UILabel"; text = "Tip: "; ObjectID = "G61-Ar-WzM";</note>
+      </trans-unit>
+      <trans-unit id="HCU-pP-DAa.text">
+        <source>Label</source>
+        <target>Label</target>
+        <note>Class = "UILabel"; text = "Label"; ObjectID = "HCU-pP-DAa";</note>
+      </trans-unit>
+      <trans-unit id="I8D-eB-EuR.title">
+        <source>Maid</source>
+        <target>Maid</target>
+        <note>Class = "UITabBarItem"; title = "Maid"; ObjectID = "I8D-eB-EuR";</note>
+      </trans-unit>
+      <trans-unit id="K5m-af-gge.text">
+        <source>Label</source>
+        <target>Label</target>
+        <note>Class = "UILabel"; text = "Label"; ObjectID = "K5m-af-gge";</note>
+      </trans-unit>
+      <trans-unit id="Las-hT-ky0.text">
+        <source>Debug Full Unlock</source>
+        <target>Debug Full Unlock</target>
+        <note>Class = "UILabel"; text = "Debug Full Unlock"; ObjectID = "Las-hT-ky0";</note>
+      </trans-unit>
+      <trans-unit id="Ljr-Xd-mhL.title">
+        <source>Taxi</source>
+        <target>Taxi</target>
+        <note>Class = "UITabBarItem"; title = "Taxi"; ObjectID = "Ljr-Xd-mhL";</note>
+      </trans-unit>
+      <trans-unit id="MOo-K8-RnY.placeholder">
+        <source>Your Bill</source>
+        <target>Your Bill</target>
+        <note>Class = "UITextField"; placeholder = "Your Bill"; ObjectID = "MOo-K8-RnY";</note>
+      </trans-unit>
+      <trans-unit id="NXc-o4-9Rp.text">
+        <source>0</source>
+        <target>0</target>
+        <note>Class = "UILabel"; text = "0"; ObjectID = "NXc-o4-9Rp";</note>
+      </trans-unit>
+      <trans-unit id="PGj-Bb-urk.text">
+        <source>Active</source>
+        <target>Active</target>
+        <note>Class = "UILabel"; text = "Active"; ObjectID = "PGj-Bb-urk";</note>
+      </trans-unit>
+      <trans-unit id="PXb-gm-LL3.placeholder">
+        <source>Ticket Price</source>
+        <target>Ticket Price</target>
+        <note>Class = "UITextField"; placeholder = "Ticket Price"; ObjectID = "PXb-gm-LL3";</note>
+      </trans-unit>
+      <trans-unit id="Pet-mc-VTB.text">
+        <source>😶</source>
+        <target>😶</target>
+        <note>Class = "UILabel"; text = "😶"; ObjectID = "Pet-mc-VTB";</note>
+      </trans-unit>
+      <trans-unit id="RMH-b5-76f.text">
+        <source>Tip: </source>
+        <target>Tip: </target>
+        <note>Class = "UILabel"; text = "Tip: "; ObjectID = "RMH-b5-76f";</note>
+      </trans-unit>
+      <trans-unit id="RhZ-Dv-8bO.text">
+        <source>Build</source>
+        <target>Build</target>
+        <note>Class = "UILabel"; text = "Build"; ObjectID = "RhZ-Dv-8bO";</note>
+      </trans-unit>
+      <trans-unit id="Rrs-cC-92g.text">
+        <source>Label</source>
+        <target>Label</target>
+        <note>Class = "UILabel"; text = "Label"; ObjectID = "Rrs-cC-92g";</note>
+      </trans-unit>
+      <trans-unit id="S5p-34-26A.title">
+        <source>Settings</source>
+        <target>Settings</target>
+        <note>Class = "UINavigationItem"; title = "Settings"; ObjectID = "S5p-34-26A";</note>
+      </trans-unit>
+      <trans-unit id="Teq-7r-hre.text">
+        <source>😶</source>
+        <target>😶</target>
+        <note>Class = "UILabel"; text = "😶"; ObjectID = "Teq-7r-hre";</note>
+      </trans-unit>
+      <trans-unit id="Vop-fT-l1P.title">
+        <source>About &amp; Settings</source>
+        <target>About &amp; Settings</target>
+        <note>Class = "UITableViewController"; title = "About &amp; Settings"; ObjectID = "Vop-fT-l1P";</note>
+      </trans-unit>
+      <trans-unit id="WQl-My-q44.text">
+        <source>Detail</source>
+        <target>Detail</target>
+        <note>Class = "UILabel"; text = "Detail"; ObjectID = "WQl-My-q44";</note>
+      </trans-unit>
+      <trans-unit id="Wsx-PR-pIS.text">
+        <source>Developer</source>
+        <target>Developer</target>
+        <note>Class = "UILabel"; text = "Developer"; ObjectID = "Wsx-PR-pIS";</note>
+      </trans-unit>
+      <trans-unit id="X2W-7v-W6G.text">
+        <source>😶</source>
+        <target>😶</target>
+        <note>Class = "UILabel"; text = "😶"; ObjectID = "X2W-7v-W6G";</note>
+      </trans-unit>
+      <trans-unit id="YdD-vI-qU6.text">
+        <source>Total: </source>
+        <target>Total: </target>
+        <note>Class = "UILabel"; text = "Total: "; ObjectID = "YdD-vI-qU6";</note>
+      </trans-unit>
+      <trans-unit id="cLB-Tx-NGB.text">
+        <source>Version</source>
+        <target>Version</target>
+        <note>Class = "UILabel"; text = "Version"; ObjectID = "cLB-Tx-NGB";</note>
+      </trans-unit>
+      <trans-unit id="czM-f2-hPJ.text">
+        <source>Label</source>
+        <target>Label</target>
+        <note>Class = "UILabel"; text = "Label"; ObjectID = "czM-f2-hPJ";</note>
+      </trans-unit>
+      <trans-unit id="d9d-1g-F4g.text">
+        <source>Label</source>
+        <target>Label</target>
+        <note>Class = "UILabel"; text = "Label"; ObjectID = "d9d-1g-F4g";</note>
+      </trans-unit>
+      <trans-unit id="dsU-IC-E6f.text">
+        <source>Tip: </source>
+        <target>Tip: </target>
+        <note>Class = "UILabel"; text = "Tip: "; ObjectID = "dsU-IC-E6f";</note>
+      </trans-unit>
+      <trans-unit id="e2j-2n-t9f.text">
+        <source>Total: </source>
+        <target>Total: </target>
+        <note>Class = "UILabel"; text = "Total: "; ObjectID = "e2j-2n-t9f";</note>
+      </trans-unit>
+      <trans-unit id="eRc-JK-p7U.text">
+        <source>Tip: </source>
+        <target>Tip: </target>
+        <note>Class = "UILabel"; text = "Tip: "; ObjectID = "eRc-JK-p7U";</note>
+      </trans-unit>
+      <trans-unit id="fh0-VH-JQP.text">
+        <source>Tip: </source>
+        <target>Tip: </target>
+        <note>Class = "UILabel"; text = "Tip: "; ObjectID = "fh0-VH-JQP";</note>
+      </trans-unit>
+      <trans-unit id="gBM-eg-M1y.placeholder">
+        <source># of Drinks</source>
+        <target># of Drinks</target>
+        <note>Class = "UITextField"; placeholder = "# of Drinks"; ObjectID = "gBM-eg-M1y";</note>
+      </trans-unit>
+      <trans-unit id="gJf-j3-Jue.title">
+        <source>Tour Bus Driver</source>
+        <target>Tour Bus Driver</target>
+        <note>Class = "UITabBarItem"; title = "Tour Bus Driver"; ObjectID = "gJf-j3-Jue";</note>
+      </trans-unit>
+      <trans-unit id="hLB-Y7-ub8.headerTitle">
+        <source>Acknowledgements</source>
+        <target>Acknowledgements</target>
+        <note>Class = "UITableViewSection"; headerTitle = "Acknowledgements"; ObjectID = "hLB-Y7-ub8";</note>
+      </trans-unit>
+      <trans-unit id="hSt-lx-ph3.placeholder">
+        <source>Emoji Name</source>
+        <target>Emoji Name</target>
+        <note>Class = "UITextField"; placeholder = "Emoji Name"; ObjectID = "hSt-lx-ph3";</note>
+      </trans-unit>
+      <trans-unit id="hUD-Ne-qsA.headerTitle">
+        <source>Unlocks</source>
+        <target>Unlocks</target>
+        <note>Class = "UITableViewSection"; headerTitle = "Unlocks"; ObjectID = "hUD-Ne-qsA";</note>
+      </trans-unit>
+      <trans-unit id="jtr-DR-Oa2.headerTitle">
+        <source>About</source>
+        <target>About</target>
+        <note>Class = "UITableViewSection"; headerTitle = "About"; ObjectID = "jtr-DR-Oa2";</note>
+      </trans-unit>
+      <trans-unit id="oAJ-4r-XnJ.text">
+        <source>Label</source>
+        <target>Label</target>
+        <note>Class = "UILabel"; text = "Label"; ObjectID = "oAJ-4r-XnJ";</note>
+      </trans-unit>
+      <trans-unit id="oVO-el-Y2c.placeholder">
+        <source>Nights</source>
+        <target>Nights</target>
+        <note>Class = "UITextField"; placeholder = "Nights"; ObjectID = "oVO-el-Y2c";</note>
+      </trans-unit>
+      <trans-unit id="qR0-l1-iUb.title">
+        <source>Bar Tender</source>
+        <target>Bar Tender</target>
+        <note>Class = "UITabBarItem"; title = "Bar Tender"; ObjectID = "qR0-l1-iUb";</note>
+      </trans-unit>
+      <trans-unit id="sVb-OB-qOj.text">
+        <source>Paul Wood</source>
+        <target>Paul Wood</target>
+        <note>Class = "UILabel"; text = "Paul Wood"; ObjectID = "sVb-OB-qOj";</note>
+      </trans-unit>
+      <trans-unit id="tKl-ei-EoB.normalTitle">
+        <source>Restore Past Purchases</source>
+        <target>Restore Past Purchases</target>
+        <note>Class = "UIButton"; normalTitle = "Restore Past Purchases"; ObjectID = "tKl-ei-EoB";</note>
+      </trans-unit>
+      <trans-unit id="uJx-De-yJ5.title">
+        <source>Tour Bus Drivers</source>
+        <target>Tour Bus Drivers</target>
+        <note>Class = "UIViewController"; title = "Tour Bus Drivers"; ObjectID = "uJx-De-yJ5";</note>
+      </trans-unit>
+      <trans-unit id="ueH-bJ-GcL.normalTitle">
+        <source>Buy</source>
+        <target>Buy</target>
+        <note>Class = "UIButton"; normalTitle = "Buy"; ObjectID = "ueH-bJ-GcL";</note>
+      </trans-unit>
+      <trans-unit id="v8N-lg-PTN.text">
+        <source>Open Source</source>
+        <target>Open Source</target>
+        <note>Class = "UILabel"; text = "Open Source"; ObjectID = "v8N-lg-PTN";</note>
+      </trans-unit>
+      <trans-unit id="vLB-6P-Mux.text">
+        <source>v0.0</source>
+        <target>v0.0</target>
+        <note>Class = "UILabel"; text = "v0.0"; ObjectID = "vLB-6P-Mux";</note>
+      </trans-unit>
+      <trans-unit id="w1v-ab-c0Q.placeholder">
+        <source># of Bags</source>
+        <target># of Bags</target>
+        <note>Class = "UITextField"; placeholder = "# of Bags"; ObjectID = "w1v-ab-c0Q";</note>
+      </trans-unit>
+      <trans-unit id="wWx-1J-imm.text">
+        <source>Label</source>
+        <target>Label</target>
+        <note>Class = "UILabel"; text = "Label"; ObjectID = "wWx-1J-imm";</note>
+      </trans-unit>
+      <trans-unit id="yDM-Vb-xP7.title">
+        <source>Resturant</source>
+        <target>Resturant</target>
+        <note>Class = "UITabBarItem"; title = "Resturant"; ObjectID = "yDM-Vb-xP7";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Tipski/Info.plist" source-language="en" datatype="plaintext" target-language="ru">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.1" build-num="8B62"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleDisplayName">
+        <source>Tipski</source>
+      </trans-unit>
+      <trans-unit id="CFBundleName">
+        <source>$(PRODUCT_NAME)</source>
+      </trans-unit>
+      <trans-unit id="CFBundleShortVersionString">
+        <source>1.0</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Tipski/Localizable.strings" source-language="en" datatype="plaintext" target-language="ru">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.1" build-num="8B62"/>
+    </header>
+    <body>
+      <trans-unit id="Buy: %@">
+        <source>Buy: %@</source>
+        <note>Buy Button Title Format</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="TipskiTests/Info.plist" source-language="en" datatype="plaintext" target-language="ru">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.1" build-num="8B62"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName">
+        <source>$(PRODUCT_NAME)</source>
+      </trans-unit>
+      <trans-unit id="CFBundleShortVersionString">
+        <source>1.0</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="TipskiUITests/Info.plist" source-language="en" datatype="plaintext" target-language="ru">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.1" build-num="8B62"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName">
+        <source>$(PRODUCT_NAME)</source>
+      </trans-unit>
+      <trans-unit id="CFBundleShortVersionString">
+        <source>1.0</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
