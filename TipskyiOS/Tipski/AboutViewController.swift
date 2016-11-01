@@ -67,9 +67,72 @@ class AboutViewController : UITableViewController {
         #else
             //DO NOTHING IN PRODUCTION!
         #endif
+        tableView.reloadData()
     }
 
     
+    @IBOutlet weak var fullUnlockCell: UITableViewCell!
+    @IBOutlet weak var restoreCell: UITableViewCell!
+    @IBOutlet weak var debugPurchasesCell: UITableViewCell!
     
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        if section == 0 && UserDefaults.standard.bool(forKey: FullUnlock) {
+            return super.tableView(tableView, numberOfRowsInSection: section) - 1
+        }
+        
+        return super.tableView(tableView, numberOfRowsInSection: section)
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        // Recalculate indexPath based on hidden cells
+        let newIndexPath = offsetIndexPath(indexPath: indexPath)
+        return super.tableView(tableView, cellForRowAt: newIndexPath)
+    }
+ 
+    func offsetIndexPath(indexPath: IndexPath) -> IndexPath {
+        
+        if UserDefaults.standard.bool(forKey: FullUnlock) {
+        
+            if indexPath.section == 0 && indexPath.row == 0 {
+                return IndexPath(row: 1, section: 0)
+            }
+            if indexPath.section == 0 && indexPath.row == 1 {
+                return IndexPath(row: 2, section: 0)
+            }
+//            if indexPath.section == 0 && indexPath.row == 2 {
+//                
+//            }
+        }
+        
+        return IndexPath(row: indexPath.row, section: indexPath.section)
+    }
+    
+//    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        
+//        let cell = self.tableView.cellForRow(at: indexPath)
+//        if cell == fullUnlockCell &&
+//            UserDefaults.standard.bool(forKey: FullUnlock) {
+//                return 0
+//        }
+//        else if cell == debugPurchasesCell {
+//            #if !DEBUG
+//                // This Cell should always be visible in development Mode and always hidden in production
+//                return 0
+//            #endif
+//        }
+//        return super.tableView(tableView, heightForRowAt: indexPath)
+//    }
+    /*
+     - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+     {
+     UITableViewCell* cell = [super tableView:tableView cellForRowAtIndexPath:indexPath];
+     
+     if(cell == self.cellYouWantToHide)
+     return 0; //set the hidden cell's height to 0
+     
+     return [super tableView:tableView heightForRowAtIndexPath:indexPath];
+     }
+ */
     
 }
