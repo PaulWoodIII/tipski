@@ -69,11 +69,12 @@
                                                     <action selector="textFieldDidChange:" destination="BYZ-38-t0r" eventType="editingChanged" id="1IY-TY-o2O"/>
                                                 </connections>
                                             </textField>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="😶" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Uf-Yg-ztL">
+                                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="😶" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Uf-Yg-ztL">
                                                 <rect key="frame" x="91.5" y="54" width="92" height="101.5"/>
                                                 <accessibility key="accessibilityConfiguration">
-                                                    <accessibilityTraits key="traits" none="YES"/>
+                                                    <accessibilityTraits key="traits" notEnabled="YES"/>
                                                 </accessibility>
+                                                <gestureRecognizers/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="85"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -85,6 +86,9 @@
                                                         </attributes>
                                                     </fragment>
                                                 </attributedString>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="DKa-9a-S3l" appends="YES" id="eXO-GK-0Bi"/>
+                                                </connections>
                                             </label>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="YCB-9v-NEA">
                                                 <rect key="frame" x="-2" y="165.5" width="279" height="31"/>
@@ -256,6 +260,11 @@
                         </barButtonItem>
                     </items>
                 </toolbar>
+                <tapGestureRecognizer id="DKa-9a-S3l">
+                    <connections>
+                        <action selector="emojiTappedWithSender:" destination="BYZ-38-t0r" id="2qs-ny-rNe"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="23.199999999999999" y="35.532233883058474"/>
         </scene>
@@ -263,7 +272,7 @@
         <scene sceneID="f8b-N8-gUv">
             <objects>
                 <navigationController id="ALc-fl-ogU" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0ad-2I-X0g">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="0ad-2I-X0g">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -773,13 +782,13 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Debug Full Unlock" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Las-hT-ky0">
-                                                    <rect key="frame" x="20" y="9.5" width="160" height="26"/>
+                                                    <rect key="frame" x="20" y="9" width="160" height="26"/>
                                                     <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="19"/>
                                                     <color key="textColor" red="0.21176470820000001" green="0.22352941330000001" blue="0.31764706970000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FtT-gG-vxt">
-                                                    <rect key="frame" x="255" y="7" width="51" height="31"/>
+                                                    <rect key="frame" x="255" y="6" width="51" height="31"/>
                                                     <connections>
                                                         <action selector="debugFullUnlockSwitchToggled:" destination="Vop-fT-l1P" eventType="valueChanged" id="Uo0-t5-1ah"/>
                                                     </connections>
@@ -949,7 +958,7 @@
             <objects>
                 <navigationController id="Ex3-KG-rcq" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Settings" image="SettingsLined" selectedImage="SettingsFIlled" id="FCq-Wn-oFq"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sBy-9R-lEA">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="sBy-9R-lEA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1771,6 +1780,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="EWk-sr-Y7c"/>
         <segue reference="BAm-Jv-l7i"/>
-        <segue reference="4Nf-4j-H67"/>
+        <segue reference="llJ-gv-7yZ"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -80,6 +80,14 @@ class TipViewController: UIViewController {
 
     }
     
+    
+    @IBAction func emojiTapped(sender: UITapGestureRecognizer) {
+        if sender.state == .ended {
+            animateSatisfactionLabel()
+        }
+    }
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == Segues.settings.rawValue {
             if let nav = segue.destination as? UINavigationController,
@@ -88,6 +96,14 @@ class TipViewController: UIViewController {
                 vc.delegate = self
             }
         }
+    }
+    
+    func animateSatisfactionLabel(){
+        // http://stackoverflow.com/a/32890257/283460
+        self.satisfactionLabel.transform =  CGAffineTransform(translationX: 20, y: 0)
+        UIView.animate(withDuration: 0.4, delay: 0.0, usingSpringWithDamping: 0.2, initialSpringVelocity: 1.0, options: .curveEaseInOut, animations: {
+            self.satisfactionLabel.transform = .identity
+        }, completion: nil)
     }
 }
 
